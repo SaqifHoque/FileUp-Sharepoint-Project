@@ -1,0 +1,168 @@
+2023-07-11 00:00:29.881 +06:00 [INF] (Registration Attempt for zakirdotdev@gmail.com )
+2023-07-11 00:01:50.461 +06:00 [INF] Login Attempt for zakirdotdev@gmail.com 
+2023-07-11 00:04:51.496 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 00:04:51.557 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 00:04:51.561 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 00:04:51.562 +06:00 [INF] Hosting environment: Development
+2023-07-11 00:04:51.563 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 00:05:47.437 +06:00 [INF] Login Attempt for zakirdotdev@gmail.com 
+2023-07-11 00:07:26.638 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 00:07:26.699 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 00:07:26.703 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 00:07:26.704 +06:00 [INF] Hosting environment: Development
+2023-07-11 00:07:26.709 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 00:09:52.523 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 00:09:52.588 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 00:09:52.592 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 00:09:52.593 +06:00 [INF] Hosting environment: Development
+2023-07-11 00:09:52.595 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 00:10:40.617 +06:00 [INF] Login Attempt for zakirdotdev@gmail.com 
+2023-07-11 00:12:42.539 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 00:12:42.608 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 00:12:42.613 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 00:12:42.614 +06:00 [INF] Hosting environment: Development
+2023-07-11 00:12:42.615 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 00:14:07.591 +06:00 [INF] Login Attempt for zakirdotdev@gmail.com 
+2023-07-11 00:16:30.164 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 00:16:30.235 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 00:16:30.240 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 00:16:30.249 +06:00 [INF] Hosting environment: Development
+2023-07-11 00:16:30.251 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 00:17:15.876 +06:00 [INF] Login Attempt for zakirdotdev@gmail.com 
+2023-07-11 00:19:01.705 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 00:19:01.751 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 00:19:01.755 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 00:19:01.757 +06:00 [INF] Hosting environment: Development
+2023-07-11 00:19:01.759 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 00:19:47.143 +06:00 [INF] Login Attempt for zakirdotdev@gmail.com 
+2023-07-11 00:24:59.277 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 00:24:59.340 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 00:24:59.344 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 00:24:59.347 +06:00 [INF] Hosting environment: Development
+2023-07-11 00:24:59.348 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 00:33:20.758 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 00:33:20.811 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 00:33:20.815 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 00:33:20.817 +06:00 [INF] Hosting environment: Development
+2023-07-11 00:33:20.818 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 00:34:00.261 +06:00 [INF] Login Attempt for zakirdotdev@gmail.com 
+2023-07-11 00:37:09.227 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 00:37:09.305 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 00:37:09.309 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 00:37:09.310 +06:00 [INF] Hosting environment: Development
+2023-07-11 00:37:09.311 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 00:37:54.716 +06:00 [INF] Login Attempt for zakirdotdev@gmail.com 
+2023-07-11 00:40:05.253 +06:00 [WRN] Unable to configure browser refresh script injection on the response. Consider manually adding '<script src="/_framework/aspnetcore-browser-refresh.js"></script>' to the body of the page.
+2023-07-11 00:54:22.665 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 00:54:22.748 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 00:54:22.752 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 00:54:22.753 +06:00 [INF] Hosting environment: Development
+2023-07-11 00:54:22.754 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 00:56:48.640 +06:00 [INF] (Registration Attempt for zakirdotdev@gmail.com )
+2023-07-11 00:58:07.080 +06:00 [INF] Login Attempt for zakirdotdev@gmail.com 
+2023-07-11 01:02:35.195 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 01:02:35.278 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 01:02:35.282 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 01:02:35.283 +06:00 [INF] Hosting environment: Development
+2023-07-11 01:02:35.284 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 01:03:19.929 +06:00 [INF] Login Attempt for zakirdotdev@gmail.com 
+2023-07-11 01:04:30.779 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 01:04:30.851 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 01:04:30.855 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 01:04:30.857 +06:00 [INF] Hosting environment: Development
+2023-07-11 01:04:30.858 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 01:05:15.839 +06:00 [INF] Login Attempt for zakirdotdev@gmail.com 
+2023-07-11 01:08:21.414 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 01:08:21.475 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 01:08:21.479 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 01:08:21.481 +06:00 [INF] Hosting environment: Development
+2023-07-11 01:08:21.482 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 01:08:37.399 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 01:08:37.445 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 01:08:37.448 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 01:08:37.450 +06:00 [INF] Hosting environment: Development
+2023-07-11 01:08:37.452 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 01:09:30.554 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 01:09:30.613 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 01:09:30.617 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 01:09:30.618 +06:00 [INF] Hosting environment: Development
+2023-07-11 01:09:30.620 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 01:11:32.117 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 01:11:32.192 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 01:11:32.196 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 01:11:32.198 +06:00 [INF] Hosting environment: Development
+2023-07-11 01:11:32.204 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 01:12:19.174 +06:00 [INF] Login Attempt for zakirdotdev@gmail.com 
+2023-07-11 01:13:27.526 +06:00 [INF] (Registration Attempt for zakirdevr@gmail.com )
+2023-07-11 01:14:45.546 +06:00 [INF] Login Attempt for zakirdotdev@gmail.com 
+2023-07-11 01:15:56.824 +06:00 [INF] Login Attempt for zakirdevr@gmail.com 
+2023-07-11 01:30:37.833 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 01:30:37.890 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 01:30:37.894 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 01:30:37.895 +06:00 [INF] Hosting environment: Development
+2023-07-11 01:30:37.896 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 01:32:28.454 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 01:32:28.503 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 01:32:28.565 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 01:32:28.569 +06:00 [INF] Hosting environment: Development
+2023-07-11 01:32:28.572 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 01:33:39.432 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 01:33:39.477 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 01:33:39.482 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 01:33:39.484 +06:00 [INF] Hosting environment: Development
+2023-07-11 01:33:39.487 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 01:38:16.753 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 01:38:16.798 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 01:38:16.803 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 01:38:16.806 +06:00 [INF] Hosting environment: Development
+2023-07-11 01:38:16.808 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 01:45:52.887 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 01:45:52.948 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 01:45:52.952 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 01:45:52.953 +06:00 [INF] Hosting environment: Development
+2023-07-11 01:45:52.954 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 01:48:52.462 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 01:48:52.510 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 01:48:52.514 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 01:48:52.518 +06:00 [INF] Hosting environment: Development
+2023-07-11 01:48:52.521 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 01:49:45.072 +06:00 [INF] Login Attempt for zakirdotdev@gmail.com 
+2023-07-11 01:55:53.520 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 01:55:53.598 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 01:55:53.602 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 01:55:53.603 +06:00 [INF] Hosting environment: Development
+2023-07-11 01:55:53.605 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 01:56:45.796 +06:00 [INF] Login Attempt for zakirdotdev@gmail.com 
+2023-07-11 01:57:20.266 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - DocUploader.Server.Controllers.FilesController.UploadDocumentToS3 (DocUploader.Server). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-07-11 01:58:44.414 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 01:58:44.585 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 01:58:44.602 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 01:58:44.603 +06:00 [INF] Hosting environment: Development
+2023-07-11 01:58:44.604 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 01:59:58.052 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 01:59:58.110 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 01:59:58.114 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 01:59:58.115 +06:00 [INF] Hosting environment: Development
+2023-07-11 01:59:58.116 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 02:00:53.410 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 02:00:53.597 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 02:00:53.601 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 02:00:53.602 +06:00 [INF] Hosting environment: Development
+2023-07-11 02:00:53.603 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 02:03:50.574 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 02:03:50.629 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 02:03:50.633 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 02:03:50.635 +06:00 [INF] Hosting environment: Development
+2023-07-11 02:03:50.636 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server
+2023-07-11 02:04:27.711 +06:00 [INF] Now listening on: https://localhost:7202
+2023-07-11 02:04:27.800 +06:00 [INF] Now listening on: http://localhost:5170
+2023-07-11 02:04:27.805 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-07-11 02:04:27.807 +06:00 [INF] Hosting environment: Development
+2023-07-11 02:04:27.810 +06:00 [INF] Content root path: D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server

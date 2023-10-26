@@ -1,0 +1,172 @@
+﻿@page "/users/register"
+@inject IClient httpClient
+@inject IEmailManager EmailManager
+@inject NavigationManager navManager
+
+@using GoogleCaptchaComponent.Models
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+
+
+@if(string.IsNullOrEmpty(message) == false)
+{
+    <div class="alert alert-danger">
+        <p>@message</p>
+    </div>
+}
+
+<div class="container" style="display:flex; justify-content:center;">
+    <div class="card" style="width: 26rem;">
+       
+        <div class="card-body">
+            <h3 class="card-title" style="text-align:center;">Register New Account</h3>
+            <div class="mb-2" style="max-width:100%; display:flex; justify-content:center;">
+                <hr style="width:50%;" />
+            </div>
+            
+            <EditForm Model="RegistrationModel" OnValidSubmit="HandleRegistration">
+                <DataAnnotationsValidator />
+                <ValidationSummary />
+               
+                <div class="form-group mb-3">
+                    <label for="clientname">Enter Client Name</label>
+                    <InputText class="form-control" @bind-Value="RegistrationModel.ClientName" />
+                    <ValidationMessage For="@(() => RegistrationModel.ClientName)" />
+                </div>
+                <div class="form-group mb-3">
+                    <label for="email">Email</label>
+                    <InputText class="form-control" @bind-Value="RegistrationModel.Email" />
+                    <ValidationMessage For="@(() => RegistrationModel.Email)" />
+                </div>
+                <div class="form-group mb-3">
+                    <label for="last4digits">Last 4 of Entity Social Security Number</label>
+                    <InputText class="form-control" @bind-Value="RegistrationModel.Last4Digits" />
+                    <ValidationMessage For="@(() => RegistrationModel.Last4Digits)" />
+                </div>
+                <div class="form-group mb-3">
+                    <label for="password">Enter Password</label>
+                    <InputText class="form-control" type="password" @bind-Value="RegistrationModel.Password" />
+                    <ValidationMessage For="@(() => RegistrationModel.Password)" />
+                </div>
+
+                <div class="form-group mb-3">
+                    <label for="confirmPassword">Re-Enter Password</label>
+                    <InputText class="form-control" type="password" @bind-Value="RegistrationModel.ConfirmPassword" />
+                    <ValidationMessage For="@(() => RegistrationModel.ConfirmPassword)" />
+                </div>
+                <div style="display:flex; justify-content:center;" class="mb-2">
+                    <GoogleRecaptcha SuccessCallBack="SuccessCallBack"
+                                     TimeOutCallBack="TimeOutCallBack"
+                                     ServerValidationErrorCallBack="ServerSideValidationError"
+                                     ServerSideValidationHandler="ServerSideValidationHandler">
+                    </GoogleRecaptcha>
+                </div>
+                <div style="text-align:center;">
+                    <button type="submit" disabled="@Disabled" class="btn" style="background-color:#f35b4d; color: white;">Register</button>
+                </div>
+               
+
+            </EditForm>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+@code {
+    UserDto RegistrationModel = new UserDto
+    {
+        Role="User"
+    };
+    string message = string.Empty;
+
+    private async Task HandleRegistration()
+    {
+        
+        try 
+        {
+
+            await httpClient.RegisterAsync(RegistrationModel);
+            var result = await EmailManager.SendEmail(RegistrationModel);
+            if (result == true)
+            {
+                navManager.NavigateTo("checkemail");
+            }
+
+            //navManager.NavigateTo("/");
+            
+        } 
+        catch(ApiException ex)
+        {
+            if(ex.StatusCode >= 200 && ex.StatusCode <= 299)
+            {
+                var result = await EmailManager.SendEmail(RegistrationModel);
+                if (result == true)
+                {
+                    navManager.NavigateTo("checkemail");
+                }
+                //NavigationToLogin();
+                
+            }
+            message = ex.Message;
+        } 
+    }
+
+    private void NavigationToLogin(){
+        navManager.NavigateTo("/");
+    }
+
+    void TimeOutCallBack(CaptchaTimeOutEventArgs e)
+    {
+        Disabled = true;
+        Console.WriteLine($"Captcha Time Out with message {e.ErrorMessage}");
+        errorMessage = $"Captcha Timeout: {e.ErrorMessage}";
+    }
+
+
+    void SuccessCallBack(CaptchaSuccessEventArgs e)
+    {
+        Disabled = false;
+
+        captchaResponse = e.CaptchaResponse;
+
+        base.StateHasChanged();
+    }
+
+    private string errorMessage;
+    private string captchaResponse;
+
+    private int currentCount = 0;
+
+    private bool Disabled = true;
+
+    private void IncrementCount()
+    {
+
+        currentCount++;
+    }
+
+    private void ServerSideValidationError(CaptchaServerSideValidationErrorEventArgs e)
+    {
+        errorMessage = $"Captcha server side validation error: {e.ErrorMessage}";
+    }
+
+    /// <summary>
+    /// Captcha Verification Should be done by an internal api which holds the secret key
+    /// </summary>
+    /// <returns></returns>
+    private async Task<ServerSideCaptchaValidationResultModel> ServerSideValidationHandler(ServerSideCaptchaValidationRequestModel requestModel)
+    {
+        using var httpClient = new HttpClient();
+
+        //var apiResult = await httpClient.GetFromJsonAsync<GoogleCaptchaCheckResponseResult>($"https://localhost:7113/VerifyCaptcha?token={requestModel.CaptchaResponse}");
+
+        return new ServerSideCaptchaValidationResultModel(true, "Success");
+
+        // return new ServerSideCaptchaValidationResultModel(apiResult.Success, string.Join("\n",apiResult.ErrorCodes ?? new List<string>(){"No Error"}));
+    }
+
+
+}

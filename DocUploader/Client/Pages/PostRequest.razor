@@ -1,0 +1,37 @@
+﻿@page "/PostRequest"
+@attribute [Authorize]
+@inject HttpClient _httpClient
+
+<h3>Post Request</h3>
+
+<EditForm Model="request" OnValidSubmit="OnSubmit">
+    <DataAnnotationsValidator />
+    <div class="mb-2">
+        <label>Request Name</label>
+        <InputText class="form-control" @bind-Value="request.RequestName" />
+        <ValidationMessage For="@(()=>request.RequestName)" />
+    </div>
+
+    <div class="mb-2">
+        <label>RequestIdInternal</label>
+        <InputNumber class="form-control" @bind-Value="request.RequestIdInternal" />
+        <ValidationMessage For="@(()=>request.RequestIdInternal)" />
+    </div>
+
+
+    <div class="mb-2">
+        <button class="btn btn-primary">Submit</button>
+    </div>
+</EditForm>
+
+
+@code {
+    ExternalRequest request = new ExternalRequest();
+
+    private async void OnSubmit()
+    {
+        await _httpClient.PostAsJsonAsync($"api/externals/request", request);
+        request = new ExternalRequest();
+        StateHasChanged();
+    }
+}

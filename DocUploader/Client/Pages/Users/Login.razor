@@ -1,0 +1,146 @@
+﻿@page "/"
+@inject IAuthenticationService authService
+@inject NavigationManager navManager
+@inject IJSRuntime JSRuntime
+
+@using GoogleCaptchaComponent.Models
+@using Microsoft.Extensions.Configuration
+@inject IConfiguration Configuration
+
+<div class="container" style="display:flex; justify-content:center;">
+
+
+
+    <div class="card" style="width: 26rem;">
+       
+        <div class="card-body">
+            <h3 class="card-title" style="text-align:center;">LOGIN NOW</h3>
+            <div class="mb-2" style="max-width:100%; display:flex; justify-content:center;">
+                <hr style="width:50%;" />
+            </div>
+            <div>
+                <EditForm Model="LoginModel" OnValidSubmit="HandleLogin">
+                    <DataAnnotationsValidator />
+                    <ValidationSummary />
+                    <div class="form-group mb-2">
+                        <label for="email">Email Address</label>
+                        <InputText class="form-control" @bind-Value="LoginModel.Email" />
+                        <ValidationMessage For="@(() => LoginModel.Email)" />
+                    </div>
+                    <br />
+                    <div class="form-group mb-2">
+                        <label for="email">Password</label>
+                        <InputText class="form-control" type="password" @bind-Value="LoginModel.Password" />
+                        <ValidationMessage For="@(() => LoginModel.Password)" />
+                    </div>
+                    <br />
+                    <div style="display:flex; justify-content:center;" class="mb-2">
+                        <GoogleRecaptcha SuccessCallBack="SuccessCallBack"
+                                         TimeOutCallBack="TimeOutCallBack"
+                                         ServerValidationErrorCallBack="ServerSideValidationError"
+                                         ServerSideValidationHandler="ServerSideValidationHandler">
+                        </GoogleRecaptcha>
+                    </div>
+                    <div style="text-align:center;">
+                        <a style="margin-right:10px; text-decoration:none;" href="/users/register">First time? Register</a>  <button type="submit" disabled="@Disabled" class="btn" style="background-color:#f35b4d; color: white;">Login</button>
+                    </div>
+                    
+                </EditForm>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@code {
+    LoginUserDto LoginModel = new LoginUserDto();
+    string message = string.Empty;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        await JSRuntime.InvokeVoidAsync("clearStorage");
+        StateHasChanged();
+    }
+
+    public async Task HandleLogin()
+    {
+        try
+        {
+            var response = await authService.AuthenticateAsync(LoginModel);
+
+            if (response)
+            {
+                navManager.NavigateTo("/upload");
+            }
+
+            string message = "Invalid Credentials, Please Try Again";
+        }
+        catch (ApiException ex)
+        {
+            if (ex.StatusCode >= 200 && ex.StatusCode <= 299)
+            {
+
+            }
+
+            message = ex.Response;
+        }
+    }
+
+
+
+    void TimeOutCallBack(CaptchaTimeOutEventArgs e)
+    {
+        Disabled = true;
+        Console.WriteLine($"Captcha Time Out with message {e.ErrorMessage}");
+        errorMessage = $"Captcha Timeout: {e.ErrorMessage}";
+    }
+
+
+    void SuccessCallBack(CaptchaSuccessEventArgs e)
+    {
+        Disabled = false;
+
+        captchaResponse = e.CaptchaResponse;
+
+        base.StateHasChanged();
+    }
+
+    private string? errorMessage;
+    private string? captchaResponse;
+
+    private int currentCount = 0;
+
+    private bool Disabled = true;
+
+    private void IncrementCount()
+    {
+
+        currentCount++;
+    }
+
+    private void ServerSideValidationError(CaptchaServerSideValidationErrorEventArgs e)
+    {
+        errorMessage = $"Captcha server side validation error: {e.ErrorMessage}";
+    }
+
+    /// <summary>
+    /// Captcha Verification Should be done by an internal api which holds the secret key
+    /// </summary>
+    /// <returns></returns>
+    private async Task<ServerSideCaptchaValidationResultModel> ServerSideValidationHandler(ServerSideCaptchaValidationRequestModel requestModel)
+    {
+        await Task.Delay(0);
+        using var httpClient = new HttpClient();
+
+        //var apiResult = await httpClient.GetFromJsonAsync<GoogleCaptchaCheckResponseResult>($"https://localhost:7113/VerifyCaptcha?token={requestModel.CaptchaResponse}");
+
+        return new ServerSideCaptchaValidationResultModel(true, "Success");
+
+        // return new ServerSideCaptchaValidationResultModel(apiResult.Success, string.Join("\n",apiResult.ErrorCodes ?? new List<string>(){"No Error"}));
+    }
+
+   
+}

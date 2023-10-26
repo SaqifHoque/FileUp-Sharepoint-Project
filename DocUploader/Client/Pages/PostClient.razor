@@ -1,0 +1,45 @@
+﻿@page "/PostClient"
+@attribute [Authorize]
+@inject HttpClient _httpClient
+<h3>Post Client</h3>
+
+<EditForm Model="appClient" OnValidSubmit="OnSubmit">
+    <DataAnnotationsValidator />
+    <div class="mb-2">
+        <label>Client Name</label>
+        <InputText class="form-control" @bind-Value="appClient.ClientName" />
+        <ValidationMessage For="@(()=>appClient.ClientName)" />
+    </div>
+
+    <div class="mb-2">
+        <label>Email</label>
+        <InputText class="form-control" @bind-Value="appClient.Email" />
+        <ValidationMessage For="@(()=>appClient.Email)" />
+    </div>
+
+    <div class="mb-2">
+        <label>Last 4 Digits</label>
+        <InputText class="form-control" @bind-Value="appClient.Last4Digits" />
+        <ValidationMessage For="@(()=>appClient.Last4Digits)" />
+    </div>
+    <div class="mb-2">
+        <label>ClientIdInternal</label>
+        <InputNumber class="form-control" @bind-Value="appClient.ClientIdInternal" />
+        <ValidationMessage For="@(()=>appClient.ClientIdInternal)" />
+    </div>
+    <div class="mb-2">
+        <button class="btn btn-primary">Submit</button>
+    </div>
+</EditForm>
+
+
+@code {
+    ExternalClient appClient = new ExternalClient();
+
+    private async void OnSubmit()
+    {
+        await _httpClient.PostAsJsonAsync($"api/externals/client", appClient);
+        appClient = new ExternalClient();
+        StateHasChanged();
+    }
+}

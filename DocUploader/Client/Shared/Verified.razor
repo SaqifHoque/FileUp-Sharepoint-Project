@@ -1,0 +1,51 @@
+﻿@page "/verified/{token}"
+@using DocUploader.Shared.Models
+@inject IEmailManager EmailManager
+@inject HttpClient Http
+@inject IJSRuntime JS
+@inject AuthenticationStateProvider GetAuthenticationStateAsync
+@inject NavigationManager navManager
+
+<div style="margin-top:70px;" class="alert alert-success">
+
+@if (String.IsNullOrEmpty(message))
+{
+        <h1 style="text-align:center" >Verifying</h1>
+    }
+    else
+    {
+        <h1 style="text-align:center">@message</h1>
+        <div style="text-align:center; margin-top:10px;">
+            <a class="btn btn-success" href="/">Login</a>
+        </div>
+    }
+
+</div>
+
+
+
+@code {
+
+    [Parameter]
+    public string? Token{ get; set; }
+    public string? message="";
+
+    protected override async Task OnParametersSetAsync()
+    {
+
+        var result = await EmailManager.CheckVerification(Token);
+        if (result)
+        {
+            message = "Email Verified Successfully";
+            StateHasChanged();
+        }
+        else
+        {
+            message = "";
+            StateHasChanged();
+        }
+
+       
+    }
+
+}

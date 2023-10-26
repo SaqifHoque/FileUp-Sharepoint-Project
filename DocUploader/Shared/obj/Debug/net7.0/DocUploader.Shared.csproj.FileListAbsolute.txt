@@ -1,0 +1,48 @@
+E:\Development\DocUploader\DocUploader\Shared\bin\Debug\net7.0\DocUploader.Shared.deps.json
+E:\Development\DocUploader\DocUploader\Shared\bin\Debug\net7.0\DocUploader.Shared.dll
+E:\Development\DocUploader\DocUploader\Shared\bin\Debug\net7.0\DocUploader.Shared.pdb
+E:\Development\DocUploader\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.csproj.AssemblyReference.cache
+E:\Development\DocUploader\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.GeneratedMSBuildEditorConfig.editorconfig
+E:\Development\DocUploader\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.AssemblyInfoInputs.cache
+E:\Development\DocUploader\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.AssemblyInfo.cs
+E:\Development\DocUploader\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.csproj.CoreCompileInputs.cache
+E:\Development\DocUploader\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.dll
+E:\Development\DocUploader\DocUploader\Shared\obj\Debug\net7.0\refint\DocUploader.Shared.dll
+E:\Development\DocUploader\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.pdb
+E:\Development\DocUploader\DocUploader\Shared\obj\Debug\net7.0\ref\DocUploader.Shared.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Shared\bin\Debug\net7.0\DocUploader.Shared.deps.json
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Shared\bin\Debug\net7.0\DocUploader.Shared.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Shared\bin\Debug\net7.0\DocUploader.Shared.pdb
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.csproj.AssemblyReference.cache
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.GeneratedMSBuildEditorConfig.editorconfig
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.AssemblyInfoInputs.cache
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.AssemblyInfo.cs
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.csproj.CoreCompileInputs.cache
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Shared\obj\Debug\net7.0\refint\DocUploader.Shared.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.pdb
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Shared\obj\Debug\net7.0\ref\DocUploader.Shared.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Shared\bin\Debug\net7.0\DocUploader.Shared.deps.json
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Shared\bin\Debug\net7.0\DocUploader.Shared.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Shared\bin\Debug\net7.0\DocUploader.Shared.pdb
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.csproj.AssemblyReference.cache
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.AssemblyInfoInputs.cache
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.AssemblyInfo.cs
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.csproj.CoreCompileInputs.cache
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Shared\obj\Debug\net7.0\refint\DocUploader.Shared.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.pdb
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Shared\obj\Debug\net7.0\ref\DocUploader.Shared.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Shared\bin\Debug\net7.0\DocUploader.Shared.deps.json
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Shared\bin\Debug\net7.0\DocUploader.Shared.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Shared\bin\Debug\net7.0\DocUploader.Shared.pdb
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.csproj.AssemblyReference.cache
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.AssemblyInfoInputs.cache
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.AssemblyInfo.cs
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.csproj.CoreCompileInputs.cache
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Shared\obj\Debug\net7.0\refint\DocUploader.Shared.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Shared\obj\Debug\net7.0\DocUploader.Shared.pdb
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Shared\obj\Debug\net7.0\ref\DocUploader.Shared.dll

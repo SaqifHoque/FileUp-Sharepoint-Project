@@ -1,0 +1,28 @@
+.dropzone[b-utuiv01l1e] {
+    position: relative;
+    overflow: hidden;
+    border: 2px dotted rgba(0,0,0,.2);
+    background-color: rgba(0,0,0,.09);
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+    .dropzone.dropzone-active[b-utuiv01l1e] {
+        background-color: #999;
+    }
+
+    .dropzone label[b-utuiv01l1e] {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+.fileProgress[b-utuiv01l1e] {
+    vertical-align: middle !important;
+}
+
+.text-icon-light[b-utuiv01l1e] {
+    color: #e9ecef;
+}

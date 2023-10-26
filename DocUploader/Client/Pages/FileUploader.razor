@@ -1,0 +1,316 @@
+﻿@page "/upload"
+@inject HttpClient Http
+@inject IJSRuntime JS
+@inject AuthenticationStateProvider GetAuthenticationStateAsync
+
+
+
+@if (!string.IsNullOrEmpty(ErrorMessage))
+{
+    <div class="alert alert-danger" role="alert">
+        @ErrorMessage
+    </div>
+}
+
+
+<div class="card mb-4">
+    <div class="card-body ">
+        <div class="row mb-5">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            
+                <div style="display: flex; justify-content: end;">
+                    <p style="padding-top:5px; padding-right:5px;">Client</p>
+                    <div>
+                <InputSelect @bind-Value="@clientId" class="form-select" aria-label="Default select example">
+                    <option value="0"> --Select--</option>
+                @foreach (var client in clients!)
+                {
+                        <option value="@client.ClientId">@client.ClientName</option>
+                }
+            </InputSelect>
+                    </div>
+                    <div style="padding:3px;">
+                        @if (clientId != 0)
+                        {
+                            <button class="btn btn-sm" style="display: inline-block;background-color:#0b2a4a; color: white;" @onclick="()=>DocumentByRequestId(clientId)">View</button>
+                        }
+                    </div>
+                </div>
+</div>
+            <div class="col-lg-6 col-md-6 col-sm-0"> </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                
+                <div style="display: flex; justify-content: end;">
+                    <p style="padding-top:5px; padding-right:5px;">Request</p>
+                    <div>
+                        <InputSelect @bind-Value="@requestId" class="form-select" aria-label="Default select example">
+                            <option value="0"> --Select--</option>
+                            @foreach (var request in requests!)
+                            {
+                                <option value="@request.RequestId">@request.RequestName</option>
+                            }
+                        </InputSelect>
+                    </div>
+                    <div style="padding:3px;">
+                        @if (requestId != 0)
+                        {
+                            <button class="btn btn-sm" style="display: inline-block;background-color:#0b2a4a; color: white;" @onclick="()=>DocumentByRequestId(requestId)">View</button>
+                        }
+                    </div>
+                </div>
+                
+               
+            </div>
+
+        </div>
+
+        <div>
+        </div>
+
+        <div style="display:flex; justify-content:flex-start; margin-bottom:16px;">
+            <div style="padding:5px;">
+                <p>1: W2 - PR</p>
+            </div>
+            <div style="margin-left:5px;">
+
+                <InputFile OnChange="AddFilesToQueue"
+                @ondragenter="HandleDragEnter"
+                @ondragleave="HandleDragLeave"
+                           disabled="@isUploading"
+                           style="width:100%;" />
+            </div>
+
+
+        </div>
+        <div style="display:flex; justify-content:flex-start; margin-bottom:16px;">
+            <div style="padding:5px;">
+                <p>2: Donations</p>
+            </div>
+            <div style="margin-left:5px;">
+
+                <InputFile OnChange="AddFilesToQueue"
+                @ondragenter="HandleDragEnter"
+                @ondragleave="HandleDragLeave"
+                           disabled="@isUploading"
+                           style="width:100%;" />
+            </div>
+
+
+        </div>
+        <div style="display:flex; justify-content:flex-start; margin-bottom:16px;">
+            <div style="padding:5px;">
+                <p>3: 1099 DIV</p>
+            </div>
+            <div style="margin-left:5px;">
+
+                <InputFile OnChange="AddFilesToQueue"
+                @ondragenter="HandleDragEnter"
+                @ondragleave="HandleDragLeave"
+                           disabled="@isUploading"
+                           style="width:100%;" />
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+@if (docTable == false)
+{
+    @if (filesQueue.Count > 0)
+    {
+        <div class="card mb-4">
+            <div class="card-header">Upload queue</div>
+            <div class="card-body">
+                <table class="table table-sm">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th class="text-center" style="width:50px">%</th>
+                            <th style="width:170px;"></th>
+                            <th>FileName</th>
+                            <th class="text-center" style="width:80px;">Size (KB)</th>
+                            <th class="text-center">Status</th>
+
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var file in filesQueue.OrderByDescending(x => x.FileId))
+                        {
+                            var fileName = file.FileName;
+                            var size = Math.Round((file.Size / 1024.00));
+                            var percentage = Math.Round(file.UploadedPercentage);
+                            <tr>
+                                <td class="text-center">
+                                    @if (file.HasBeenUploaded)
+                                    {
+                                        <span class="oi oi-circle-check text-success"></span>
+                                    }
+                                    else
+                                    {
+                                        <span class="oi oi-circle-check text-icon-light"></span>
+                                    }
+                                </td>
+                                <td class="text-end">@($"{percentage}%")</td>
+                                <td><progress value="@file.UploadedBytes" max="@file.Size" class="fileProgress"></progress></td>
+                                <td>@file.FileName</td>
+                                <td class="text-end">@string.Format("{0:#,0.##}", @size)</td>
+
+                                <td class="text-center">
+                                    @if (file.HasBeenUploaded)
+                                    {
+                                        <span class="text-success">Uploaded</span>
+                                    }
+                                    else if (isUploading)
+                                    {
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: none; display: block; shape-rendering: auto;" width="30px" height="30px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                                            <circle cx="50" cy="50" r="32" stroke-width="8" stroke="#0b2a4a" stroke-dasharray="50.26548245743669 50.26548245743669" fill="none" stroke-linecap="round">
+                                                <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s" keyTimes="0;1" values="0 50 50;360 50 50"></animateTransform>
+                                            </circle>
+                                            <!-- [ldio] generated by https://loading.io/ -->
+                                        </svg>
+
+                                    }
+                                    else
+                                    {
+                                        <span class="oi oi-circle-check text-icon-light"></span>
+                                    }
+                                </td>
+
+                                <td class="text-end"><button type="button" class="btn btn-sm btn-link" disabled="@isUploading" @onclick="(() => RemoveFromQueue(file.FileId))"><span class="oi oi-trash" aria-hidden="true"></span></button></td>
+                            </tr>
+
+                        }
+                    </tbody>
+                </table>
+
+                <div class="btn-group w-100" role="group" aria-label="Basic mixed styles example">
+
+                    <button type="button" class="btn" style="background-color:#f35b4d; color: white;" @onclick="()=>UploadFileQueue(convertTo,clientId,requestId)">Save</button>
+
+
+                    <button type="button" disabled="@isUploading" class="btn" style="background-color:#0b2a4a; color: white;" @onclick="ClearFileQueue">Clear Files Queue</button>
+                </div>
+
+            </div>
+        </div>
+    }
+}
+
+
+
+@if (docTable==true)
+{
+    @if (documents == null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Document Name</th>
+                    <th>Status</th>
+                    <th>Date Uploaded</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var doc in documents)
+                {
+                    <tr>
+                        <td>@doc.DocumentName!.Split("StaticFiles\\")[1]</td>
+                        <td>@doc.Status</td>
+                        <td>@doc.DateUploaded</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+}
+
+
+
+@code {
+    string convertTo = string.Empty;
+    private string message = string.Empty;
+    bool docTable = false;
+    string nam = "";
+    private int clientId = 0;
+    private int requestId = 0;
+    private List<DocUploader.Shared.Models.Client>? clients = new List<DocUploader.Shared.Models.Client>();
+    private List<DocUploader.Shared.Models.Request>? requests = new List<DocUploader.Shared.Models.Request>();
+    private List<DocUploader.Shared.Models.TableModel>? documents = new List<DocUploader.Shared.Models.TableModel>();
+    
+
+    protected override async Task OnInitializedAsync()
+    {
+        var authstate = await GetAuthenticationStateAsync.GetAuthenticationStateAsync();
+        var user = authstate.User;
+        var name = user.Identity!.Name;
+        var userId = await Http.GetFromJsonAsync<int>($"api/files/getclientsId/{name}");
+        clientId = Convert.ToInt32(userId.ToString());
+        requestId = Convert.ToInt32(userId.ToString());
+        clients = await Http.GetFromJsonAsync<List<DocUploader.Shared.Models.Client>>("api/files/getclients");
+        requests = await Http.GetFromJsonAsync<List<DocUploader.Shared.Models.Request>>("api/files/getrequests");
+    }
+
+
+
+    private async Task DocumentByClientId(int id)
+    {
+        docTable = !docTable;
+        documents = await Http
+        .GetFromJsonAsync<List<DocUploader.Shared.Models.TableModel>>($"api/files/getUploadedFileByClientId/{id}");
+    }
+
+    private async Task DocumentByRequestId(int id)
+    {
+        docTable = !docTable;
+        documents = await Http
+        .GetFromJsonAsync<List<DocUploader.Shared.Models.TableModel>>($"api/files/getUploadedFileByRequestId/{id}");
+    }
+
+
+
+    private async Task GetFile(string filename)
+    {
+
+        message = "Downloading... Please Wait";
+
+        string encodedString = System.Uri.EscapeDataString(filename);
+
+
+        var response = await Http.GetAsync($"/api/Files/{encodedString}");
+        var content = await response!.Content.ReadAsByteArrayAsync();
+
+        if (content.Length > 0)
+        {
+            message = "Success";
+            await InvokeAsync(StateHasChanged);
+            await JS.InvokeAsync<object>("downloadFile", filename, content);
+        }
+        else
+        {
+            message = "Oops! Download Failed";
+            await InvokeAsync(StateHasChanged);
+        }
+
+
+
+
+
+
+    }
+
+    private async Task DownloadAll()
+    {
+        await JS.InvokeAsync<object>("downloadAll", "downloadButton");
+    }
+
+}
+

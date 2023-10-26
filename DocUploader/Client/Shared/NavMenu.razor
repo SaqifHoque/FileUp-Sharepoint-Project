@@ -1,0 +1,93 @@
+﻿<div class="top-row ps-3 navbar navbar-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">DocUploader</a>
+        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</div>
+
+<div class="@NavMenuCssClass nav-scrollable" @onclick="ToggleNavMenu">
+    <nav class="flex-column">
+        <AuthorizeView>
+            <Authorized>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link">
+                        <span class="oi oi-person" aria-hidden="true"></span> @context.User?.Identity?.Name
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="users/logout">
+                        <span class="oi oi-arrow-circle-left" aria-hidden="true"></span> Log Out
+                    </NavLink>
+                </div>
+                
+                <hr />
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="upload">
+                        <span class="oi oi-list-rich" aria-hidden="true"></span> Upload Documents
+                    </NavLink>
+                </div>
+                <hr />
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="uploadany">
+                        <span class="oi oi-list-rich" aria-hidden="true"></span> Upload Any Documents
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="postclient">
+                        <span class="oi oi-list-rich" aria-hidden="true"></span> Post Client
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="postrequest">
+                        <span class="oi oi-list-rich" aria-hidden="true"></span> Post Request
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="postdocument">
+                        <span class="oi oi-list-rich" aria-hidden="true"></span> Post Document
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="document">
+                        <span class="oi oi-list-rich" aria-hidden="true"></span> Documents
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="swagger">
+                        <span class="oi oi-plus" aria-hidden="true"></span> APIs
+                    </NavLink>
+                </div>
+            </Authorized>
+
+            <NotAuthorized>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="users/register">
+                        <span class="oi oi-person" aria-hidden="true"></span> Register
+                    </NavLink>
+                </div>
+                <div class="nav-item px-3">
+                    <NavLink class="nav-link" href="/">
+                        <span class="oi oi-person" aria-hidden="true"></span> Login
+                    </NavLink>
+                </div>
+            </NotAuthorized>
+
+        </AuthorizeView>
+        <AuthorizeView Roles="Administrator">
+           
+        </AuthorizeView>
+    </nav>
+</div>
+
+@code {
+    private bool collapseNavMenu = true;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}

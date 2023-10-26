@@ -1,0 +1,546 @@
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Client.staticwebassets.runtime.json
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\appsettings.Development.json
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\appsettings.json
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\BrowserDebugHost.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\BrowserDebugHost.runtimeconfig.json
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\BrowserDebugProxy.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\Microsoft.CodeAnalysis.CSharp.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\Microsoft.CodeAnalysis.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\Microsoft.CodeAnalysis.Scripting.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\Newtonsoft.Json.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Server.staticwebassets.runtime.json
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Server.exe
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Server.deps.json
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Server.runtimeconfig.json
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Server.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Server.pdb
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Humanizer.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Authorization.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.Forms.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.Web.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.WebAssembly.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.WebAssembly.Server.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Metadata.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.JSInterop.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.JSInterop.WebAssembly.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Mono.TextTemplating.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\MySqlConnector.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\System.CodeDom.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Client.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Shared.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Client.pdb
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Shared.pdb
+E:\Development\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.csproj.AssemblyReference.cache
+E:\Development\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.GeneratedMSBuildEditorConfig.editorconfig
+E:\Development\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.AssemblyInfoInputs.cache
+E:\Development\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.AssemblyInfo.cs
+E:\Development\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.csproj.CoreCompileInputs.cache
+E:\Development\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.MvcApplicationPartsAssemblyInfo.cache
+E:\Development\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.RazorAssemblyInfo.cache
+E:\Development\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.RazorAssemblyInfo.cs
+E:\Development\DocUploader\DocUploader\Server\obj\Debug\net7.0\staticwebassets\msbuild.DocUploader.Server.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Development\DocUploader\DocUploader\Server\obj\Debug\net7.0\staticwebassets\msbuild.build.DocUploader.Server.props
+E:\Development\DocUploader\DocUploader\Server\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.DocUploader.Server.props
+E:\Development\DocUploader\DocUploader\Server\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.DocUploader.Server.props
+E:\Development\DocUploader\DocUploader\Server\obj\Debug\net7.0\staticwebassets.pack.json
+E:\Development\DocUploader\DocUploader\Server\obj\Debug\net7.0\staticwebassets.build.json
+E:\Development\DocUploader\DocUploader\Server\obj\Debug\net7.0\staticwebassets.development.json
+E:\Development\DocUploader\DocUploader\Server\obj\Debug\net7.0\scopedcss\bundle\DocUploader.Server.styles.css
+E:\Development\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.csproj.CopyComplete
+E:\Development\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.dll
+E:\Development\DocUploader\DocUploader\Server\obj\Debug\net7.0\refint\DocUploader.Server.dll
+E:\Development\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.pdb
+E:\Development\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.genruntimeconfig.cache
+E:\Development\DocUploader\DocUploader\Server\obj\Debug\net7.0\ref\DocUploader.Server.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\AutoMapper.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Duende.IdentityServer.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Duende.IdentityServer.AspNetIdentity.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Duende.IdentityServer.EntityFramework.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Duende.IdentityServer.EntityFramework.Storage.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Duende.IdentityServer.Storage.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\IdentityModel.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.ApiAuthorization.IdentityServer.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Newtonsoft.Json.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.AspNetCore.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.Expressions.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.Sinks.File.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+E:\Development\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.MvcApplicationPartsAssemblyInfo.cs
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Blazored.LocalStorage.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.Authorization.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+E:\Development\DocUploader\DocUploader\Server\bin\Debug\net7.0\GoogleCaptchaComponent.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Client.staticwebassets.runtime.json
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\appsettings.Development.json
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\appsettings.json
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\BrowserDebugHost.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\BrowserDebugHost.runtimeconfig.json
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\BrowserDebugProxy.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\Microsoft.CodeAnalysis.CSharp.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\Microsoft.CodeAnalysis.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\Microsoft.CodeAnalysis.Scripting.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\Newtonsoft.Json.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Server.staticwebassets.runtime.json
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Server.exe
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Server.deps.json
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Server.runtimeconfig.json
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Server.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Server.pdb
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\AutoMapper.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Blazored.LocalStorage.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Duende.IdentityServer.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Duende.IdentityServer.AspNetIdentity.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Duende.IdentityServer.EntityFramework.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Duende.IdentityServer.EntityFramework.Storage.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Duende.IdentityServer.Storage.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\GoogleCaptchaComponent.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Humanizer.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\IdentityModel.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.ApiAuthorization.IdentityServer.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Authorization.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.Authorization.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.Forms.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.Web.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.WebAssembly.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.WebAssembly.Server.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Metadata.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.JSInterop.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.JSInterop.WebAssembly.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Mono.TextTemplating.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\MySqlConnector.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Newtonsoft.Json.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.AspNetCore.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.Expressions.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.Sinks.File.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\System.CodeDom.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Client.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Shared.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Client.pdb
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Shared.pdb
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.csproj.AssemblyReference.cache
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.GeneratedMSBuildEditorConfig.editorconfig
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.AssemblyInfoInputs.cache
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.AssemblyInfo.cs
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.csproj.CoreCompileInputs.cache
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.MvcApplicationPartsAssemblyInfo.cs
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.MvcApplicationPartsAssemblyInfo.cache
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.RazorAssemblyInfo.cache
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.RazorAssemblyInfo.cs
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\staticwebassets\msbuild.DocUploader.Server.Microsoft.AspNetCore.StaticWebAssets.props
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\staticwebassets\msbuild.build.DocUploader.Server.props
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.DocUploader.Server.props
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.DocUploader.Server.props
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\staticwebassets.pack.json
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\staticwebassets.build.json
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\staticwebassets.development.json
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\scopedcss\bundle\DocUploader.Server.styles.css
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.csproj.CopyComplete
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\refint\DocUploader.Server.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.pdb
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.genruntimeconfig.cache
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\ref\DocUploader.Server.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\MailKit.dll
+F:\Daily Work\Fiverr\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\MimeKit.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Client.staticwebassets.runtime.json
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\appsettings.Development.json
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\appsettings.json
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\BrowserDebugHost.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\BrowserDebugHost.runtimeconfig.json
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\BrowserDebugProxy.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\Microsoft.CodeAnalysis.CSharp.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\Microsoft.CodeAnalysis.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\Microsoft.CodeAnalysis.Scripting.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\Newtonsoft.Json.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Server.staticwebassets.runtime.json
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Server.exe
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Server.deps.json
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Server.runtimeconfig.json
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Server.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Server.pdb
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\AutoMapper.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Blazored.LocalStorage.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Duende.IdentityServer.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Duende.IdentityServer.AspNetIdentity.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Duende.IdentityServer.EntityFramework.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Duende.IdentityServer.EntityFramework.Storage.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Duende.IdentityServer.Storage.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\GoogleCaptchaComponent.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Humanizer.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\IdentityModel.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\MailKit.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.ApiAuthorization.IdentityServer.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Authorization.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.Authorization.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.Forms.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.Web.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.WebAssembly.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.WebAssembly.Server.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Metadata.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.JSInterop.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.JSInterop.WebAssembly.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\MimeKit.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Mono.TextTemplating.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\MySqlConnector.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Newtonsoft.Json.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.AspNetCore.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.Expressions.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Serilog.Sinks.File.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\System.CodeDom.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Client.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Shared.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Client.pdb
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\DocUploader.Shared.pdb
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.csproj.AssemblyReference.cache
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.GeneratedMSBuildEditorConfig.editorconfig
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.AssemblyInfoInputs.cache
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.AssemblyInfo.cs
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.csproj.CoreCompileInputs.cache
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.MvcApplicationPartsAssemblyInfo.cache
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.RazorAssemblyInfo.cache
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.RazorAssemblyInfo.cs
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\staticwebassets\msbuild.DocUploader.Server.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\staticwebassets\msbuild.build.DocUploader.Server.props
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.DocUploader.Server.props
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.DocUploader.Server.props
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\staticwebassets.pack.json
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\staticwebassets.build.json
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\staticwebassets.development.json
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\scopedcss\bundle\DocUploader.Server.styles.css
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.csproj.CopyComplete
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\refint\DocUploader.Server.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.pdb
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.genruntimeconfig.cache
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\obj\Debug\net7.0\ref\DocUploader.Server.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.Data.Sqlite.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\SQLitePCLRaw.batteries_v2.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\SQLitePCLRaw.core.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\SQLitePCLRaw.provider.e_sqlite3.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\alpine-arm\native\libe_sqlite3.so
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\alpine-arm64\native\libe_sqlite3.so
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\alpine-x64\native\libe_sqlite3.so
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\browser-wasm\nativeassets\net7.0\e_sqlite3.a
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\linux-arm\native\libe_sqlite3.so
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\linux-arm64\native\libe_sqlite3.so
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\linux-armel\native\libe_sqlite3.so
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\linux-mips64\native\libe_sqlite3.so
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\linux-s390x\native\libe_sqlite3.so
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\linux-x64\native\libe_sqlite3.so
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\linux-x86\native\libe_sqlite3.so
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\win-arm\native\e_sqlite3.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\win-arm64\native\e_sqlite3.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\win-x64\native\e_sqlite3.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\win-x86\native\e_sqlite3.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Azure.Core.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Azure.Identity.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\System.Drawing.Common.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\System.Memory.Data.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\System.Runtime.Caching.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\System.Security.Permissions.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\System.Windows.Extensions.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Microsoft.OpenApi.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Backup\Client Backup\DocUploader\DocUploader\DocUploader\Server\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\DocUploader.Client.staticwebassets.runtime.json
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\appsettings.Development.json
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\appsettings.json
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\BrowserDebugHost.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\BrowserDebugHost.runtimeconfig.json
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\BrowserDebugProxy.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\Microsoft.CodeAnalysis.CSharp.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\Microsoft.CodeAnalysis.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\Microsoft.CodeAnalysis.Scripting.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\BlazorDebugProxy\Newtonsoft.Json.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\DocUploader.Server.staticwebassets.runtime.json
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\DocUploader.Server.exe
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\DocUploader.Server.deps.json
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\DocUploader.Server.runtimeconfig.json
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\DocUploader.Server.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\DocUploader.Server.pdb
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\AutoMapper.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Azure.Core.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Azure.Identity.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Blazored.LocalStorage.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\BouncyCastle.Cryptography.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Duende.IdentityServer.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Duende.IdentityServer.AspNetIdentity.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Duende.IdentityServer.EntityFramework.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Duende.IdentityServer.EntityFramework.Storage.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Duende.IdentityServer.Storage.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\GoogleCaptchaComponent.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Humanizer.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\IdentityModel.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\MailKit.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.ApiAuthorization.IdentityServer.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.OpenIdConnect.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Authorization.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.Authorization.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.WebAssembly.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Components.WebAssembly.Server.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.Metadata.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.AspNetCore.OpenApi.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.Data.Sqlite.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.Identity.Client.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.JSInterop.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.JSInterop.WebAssembly.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.OpenApi.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\MimeKit.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\MySqlConnector.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Serilog.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Serilog.AspNetCore.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Serilog.Expressions.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Serilog.Sinks.File.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\SQLitePCLRaw.batteries_v2.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\SQLitePCLRaw.core.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\SQLitePCLRaw.provider.e_sqlite3.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\System.CodeDom.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\System.Drawing.Common.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\System.Memory.Data.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\System.Runtime.Caching.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\System.Security.Cryptography.ProtectedData.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\System.Security.Permissions.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\System.Windows.Extensions.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\alpine-arm\native\libe_sqlite3.so
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\alpine-arm64\native\libe_sqlite3.so
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\browser-wasm\nativeassets\net7.0\e_sqlite3.a
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\linux-mips64\native\libe_sqlite3.so
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\linux-musl-arm\native\libe_sqlite3.so
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\linux-musl-arm64\native\libe_sqlite3.so
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\linux-ppc64le\native\libe_sqlite3.so
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\linux-s390x\native\libe_sqlite3.so
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\maccatalyst-arm64\native\libe_sqlite3.dylib
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\maccatalyst-x64\native\libe_sqlite3.dylib
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\osx-arm64\native\libe_sqlite3.dylib
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\win-arm\native\e_sqlite3.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\win-x64\native\e_sqlite3.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\win-x86\native\e_sqlite3.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\DocUploader.Client.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\DocUploader.Shared.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\DocUploader.Client.pdb
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\bin\Debug\net7.0\DocUploader.Shared.pdb
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.csproj.AssemblyReference.cache
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.AssemblyInfoInputs.cache
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.AssemblyInfo.cs
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.csproj.CoreCompileInputs.cache
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.MvcApplicationPartsAssemblyInfo.cs
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.RazorAssemblyInfo.cache
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.RazorAssemblyInfo.cs
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\obj\Debug\net7.0\staticwebassets\msbuild.DocUploader.Server.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\obj\Debug\net7.0\staticwebassets\msbuild.build.DocUploader.Server.props
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.DocUploader.Server.props
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.DocUploader.Server.props
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\obj\Debug\net7.0\staticwebassets.build.json
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\obj\Debug\net7.0\staticwebassets.development.json
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\obj\Debug\net7.0\scopedcss\bundle\DocUploader.Server.styles.css
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.csproj.CopyComplete
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\obj\Debug\net7.0\refint\DocUploader.Server.dll
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.pdb
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\obj\Debug\net7.0\DocUploader.Server.genruntimeconfig.cache
+C:\Projects\Sharepoint\sharepoint-project\DocUploader\Server\obj\Debug\net7.0\ref\DocUploader.Server.dll

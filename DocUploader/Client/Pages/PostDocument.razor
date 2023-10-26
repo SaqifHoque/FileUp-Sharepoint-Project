@@ -1,0 +1,54 @@
+﻿@page "/PostDocument"
+@attribute [Authorize]
+@inject HttpClient _httpClient
+
+<h3>Post Document</h3>
+
+<EditForm Model="requestDocument" OnValidSubmit="OnSubmit">
+    <DataAnnotationsValidator />
+    <div class="mb-2">
+        <label>Document Path</label>
+        <InputText class="form-control" @bind-Value="requestDocument.DocumentsPath" />
+        <ValidationMessage For="@(()=>requestDocument.DocumentsPath)" />
+    </div>
+
+    <div class="mb-2">
+        <label>Document Name</label>
+        <InputText class="form-control" @bind-Value="requestDocument.DocumentsName" />
+        <ValidationMessage For="@(()=>requestDocument.DocumentsName)" />
+    </div>
+
+    <div class="mb-2">
+        <label>Request Id</label>
+        <InputSelect class="form-select" @bind-Value="requestDocument.ExternalRequestId">
+            @foreach (var request in requests!)
+            {
+                <option value="@request.RequestIdInternal">@request.RequestName</option>
+            }
+        </InputSelect>
+
+        <ValidationMessage For="@(()=>requestDocument.ExternalRequestId)" />
+    </div>
+    <div class="mb-2">
+        <button class="btn btn-primary">Submit</button>
+    </div>
+</EditForm>
+
+@code {
+    ExternalRequestDocument requestDocument = new ExternalRequestDocument();
+    private IEnumerable<ExternalRequest>? requests = new List<ExternalRequest>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        requests = await _httpClient.GetFromJsonAsync<IEnumerable<ExternalRequest>>($"api/externals/getrequests");
+    }
+
+    private async void OnSubmit()
+    {
+        await _httpClient.PostAsJsonAsync($"api/externals/request", requestDocument);
+        requestDocument = new ExternalRequestDocument();
+        StateHasChanged();
+    }
+
+}
+
