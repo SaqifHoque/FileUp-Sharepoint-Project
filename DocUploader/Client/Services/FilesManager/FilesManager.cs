@@ -27,6 +27,20 @@ namespace DocUploader.Client.Services.FilesManager
                 return false;
             }
         } //UploadFileChunk
+        public async Task<bool> UploadFileChunkToSharePoint(FileChunkDto fileChunkDto)
+        {
+            try
+            {
+                var result = await _http.PostAsJsonAsync("api/Files/UploadFileChunkToSharePoint", fileChunkDto);
+                result.EnsureSuccessStatusCode();
+                string responseBody = await result.Content.ReadAsStringAsync();
+                return Convert.ToBoolean(responseBody);
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
 
 
         public async Task<List<string>> GetFileNames()
