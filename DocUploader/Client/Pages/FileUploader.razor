@@ -69,12 +69,14 @@
         </div>
 
         <div style="display:flex; justify-content:flex-start; margin-bottom:16px;">
+            @{
+                string docType = "W2 - PR";
+            }
             <div style="padding:5px;">
                 <p>1: W2 - PR</p>
             </div>
             <div style="margin-left:5px;">
-
-                <InputFile OnChange="AddFilesToQueue"
+                <InputFile OnChange="(e) => AddFilesToQueue(e, docType)"
                 @ondragenter="HandleDragEnter"
                 @ondragleave="HandleDragLeave"
                            disabled="@isUploading"
@@ -84,12 +86,15 @@
 
         </div>
         <div style="display:flex; justify-content:flex-start; margin-bottom:16px;">
+            @{
+                string docType2 = "Donations";
+            }
             <div style="padding:5px;">
                 <p>2: Donations</p>
             </div>
             <div style="margin-left:5px;">
 
-                <InputFile OnChange="AddFilesToQueue"
+                <InputFile OnChange="(e) => AddFilesToQueue(e, docType2)"
                 @ondragenter="HandleDragEnter"
                 @ondragleave="HandleDragLeave"
                            disabled="@isUploading"
@@ -99,12 +104,15 @@
 
         </div>
         <div style="display:flex; justify-content:flex-start; margin-bottom:16px;">
+            @{
+                string docType3 = "1099 DIV";
+            }
             <div style="padding:5px;">
                 <p>3: 1099 DIV</p>
             </div>
             <div style="margin-left:5px;">
 
-                <InputFile OnChange="AddFilesToQueue"
+                <InputFile OnChange="(e) => AddFilesToQueue(e, docType3)"
                 @ondragenter="HandleDragEnter"
                 @ondragleave="HandleDragLeave"
                            disabled="@isUploading"
@@ -159,11 +167,19 @@
                                 <td class="text-end">@string.Format("{0:#,0.##}", @size)</td>
 
                                 <td class="text-center">
-                                    @if (file.HasBeenUploaded)
+                                    @if (file.IsFailed)
+                                    {
+                                        <span class="text-danger">Failed</span>
+                                    }
+                                    else if (file.HasBeenUploaded)
                                     {
                                         <span class="text-success">Uploaded</span>
                                     }
-                                    else if (isUploading)
+                                    else if (file.IsPending)
+                                    {
+                                        <span class="text-warning">Pending</span>
+                                    }
+                                    else if (file.IsUploading)
                                     {
 
                                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: none; display: block; shape-rendering: auto;" width="30px" height="30px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
@@ -221,9 +237,19 @@
             <tbody>
                 @foreach (var doc in documents)
                 {
+                    var splitName = doc.DocumentName?.Split("StaticFiles\\");
+                    var displayName = splitName?.Length > 1 ? splitName[1] : doc.DocumentName;
+                    var splitDocName = displayName.Split("_");
+                    var docName = splitDocName.Last();
+
                     <tr>
-                        <td>@doc.DocumentName!.Split("StaticFiles\\")[1]</td>
-                        <td>@doc.Status</td>
+                        <td>@docName</td>
+                        @if (doc.Status == "Uploaded") {
+                            <td><span class="badge bg-success">@doc.Status</span></td>
+                        } else if (doc.Status == "Pending")
+                        {
+                            <td><span class="badge bg-warning text-dark">@doc.Status</span></td>
+                        }
                         <td>@doc.DateUploaded</td>
                     </tr>
                 }
@@ -245,7 +271,7 @@
     private List<DocUploader.Shared.Models.Client>? clients = new List<DocUploader.Shared.Models.Client>();
     private List<DocUploader.Shared.Models.Request>? requests = new List<DocUploader.Shared.Models.Request>();
     private List<DocUploader.Shared.Models.TableModel>? documents = new List<DocUploader.Shared.Models.TableModel>();
-    
+
 
     protected override async Task OnInitializedAsync()
     {
@@ -257,6 +283,7 @@
         requestId = Convert.ToInt32(userId.ToString());
         clients = await Http.GetFromJsonAsync<List<DocUploader.Shared.Models.Client>>("api/files/getclients");
         requests = await Http.GetFromJsonAsync<List<DocUploader.Shared.Models.Request>>("api/files/getrequests");
+        await DocumentByClientId(clientId);
     }
 
 
@@ -299,11 +326,6 @@
             message = "Oops! Download Failed";
             await InvokeAsync(StateHasChanged);
         }
-
-
-
-
-
 
     }
 

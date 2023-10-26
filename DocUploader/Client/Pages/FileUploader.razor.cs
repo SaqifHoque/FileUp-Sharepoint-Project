@@ -19,7 +19,7 @@ namespace DocUploader.Client.Pages
         List<FileUploadProgress> filesQueue = new();
         List<UpdatedFileInfo> UpdatedFileInfos = new List<UpdatedFileInfo>();
 
-        private void AddFilesToQueue(InputFileChangeEventArgs e)
+        private void AddFilesToQueue(InputFileChangeEventArgs e, string docType)
         {
             docTable = false;
             dropClass = string.Empty;
@@ -36,9 +36,14 @@ namespace DocUploader.Client.Pages
 
                 foreach (var file in files)
                 {
-                    var progress = new FileUploadProgress(file, file.Name, file.Size, fileCount);
-                    filesQueue.Add(progress);
-                    fileCount++;
+                    bool containsSubstring = filesQueue.Any(obj => obj.DocType == docType);
+                    if (!containsSubstring)
+                    {
+                        var progress = new FileUploadProgress(file, file.Name, file.Size, fileCount, docType);
+                        filesQueue.Add(progress);
+                        fileCount++;
+                    }
+                    
                 }
             }
         } //PlaceFilesInQue
@@ -49,6 +54,7 @@ namespace DocUploader.Client.Pages
             isUploading = true;
             await InvokeAsync(StateHasChanged);
 
+
             foreach (var file in filesQueue.OrderByDescending(x => x.FileId))
             {
                 if (!file.HasBeenUploaded)
@@ -56,139 +62,240 @@ namespace DocUploader.Client.Pages
                     file.To = convertTo;
                     file.ClientId = clientId;
                     file.RequestId = requestId;
-                    await UploadChunks(file);
-                    file.HasBeenUploaded = true;
-                    StateHasChanged();
-
+                    file.IsUploading = true;
+                    var uc = Task.Run(async () => await UploadChunks(file));
+                                        
                 }
             }
 
-            isUploading = false;
+            //isUploading = false;
+            //await InvokeAsync(StateHasChanged);
         } //UploadFileQueue
+
+        private async Task UploadChunksToSharepoints(FileUploadProgress file, string fileName)
+        {
+            await Task.Run(async () =>
+            {
+                var TotalBytes = file.Size;
+                //long chunkSize = 400000;
+                long chunkSize = long.MaxValue;
+                long numChunks = TotalBytes / chunkSize;
+                long remainder = TotalBytes % chunkSize;
+                string to = file.To!;
+
+                bool firstChunk = true;
+                using (var inStream = file.FileData.OpenReadStream(long.MaxValue))
+                {
+                    for (int i = 0; i < numChunks; i++)
+                    {
+                        var buffer = new byte[chunkSize];
+                        await inStream.ReadAsync(buffer, 0, buffer.Length);
+
+                        var chunk = new FileChunkDto
+                        {
+                            Data = buffer,
+                            FileName = fileName,
+                            Offset = filesQueue[file.FileId].UploadedBytes,
+                            FirstChunk = firstChunk,
+                            To = to,
+                            ClientId = file.ClientId,
+                            RequestId = file.RequestId
+                        };
+
+                        bool success = await FilesManager!.UploadFileChunkToSharePoint(chunk);
+
+                        if (success)
+                        {
+                            Converted = true;
+                            isDisplaying = "none";
+                            await InvokeAsync(StateHasChanged);
+
+                        }
+
+                        firstChunk = false;
+
+                        // Update our progress data and UI
+                        filesQueue[file.FileId].UploadedBytes += chunkSize;
+                        await InvokeAsync(StateHasChanged);
+                    }
+
+                    if (remainder > 0)
+                    {
+                        var buffer = new byte[remainder];
+                        await inStream.ReadAsync(buffer, 0, buffer.Length);
+
+                        var chunk = new FileChunkDto
+                        {
+                            Data = buffer,
+                            FileName = fileName,
+                            Offset = filesQueue[file.FileId].UploadedBytes,
+                            FirstChunk = firstChunk,
+                            To = to,
+                            ClientId = file.ClientId,
+                            RequestId = file.RequestId
+                        };
+                        bool success = await FilesManager!.UploadFileChunkToSharePoint(chunk);
+
+                        if (success)
+                        {
+                            Converted = true;
+                            isDisplaying = "none";
+                            await InvokeAsync(StateHasChanged);
+
+                        }
+
+                        // Update our progress data and UI
+                        filesQueue[file.FileId].UploadedBytes += remainder;
+                        file.IsPending = false;
+                        file.HasBeenUploaded = true;
+                        //await ListFiles();
+                        await InvokeAsync(StateHasChanged);
+                        //return newFileNameWithoutPath;
+                    }
+                }
+            });
+        } //UploadChunks
 
 
         private async Task UploadChunks(FileUploadProgress file)
         {
-            var TotalBytes = file.Size;
-            //long chunkSize = 400000;
-            long chunkSize = long.MaxValue;
-            long numChunks = TotalBytes / chunkSize;
-            long remainder = TotalBytes % chunkSize;
-            string to = file.To!;
-
-            string nameOnly = Path.GetFileNameWithoutExtension(file.FileName);
-            var extension = Path.GetExtension(file.FileName);
-            string newFileNameWithoutPath = $"{DateTime.Now.Ticks}{nameOnly}{extension}";
-
-            bool firstChunk = true;
-            using (var inStream = file.FileData.OpenReadStream(long.MaxValue))
+            await Task.Run(async () =>
             {
-                for (int i = 0; i < numChunks; i++)
+                isUploading = true;
+                await InvokeAsync(StateHasChanged);
+                var TotalBytes = file.Size;
+                //long chunkSize = 4000000;
+                long chunkSize = long.MaxValue;
+                long numChunks = TotalBytes / chunkSize;
+                long remainder = TotalBytes % chunkSize;
+                string to = file.To!;
+
+                string nameOnly = Path.GetFileNameWithoutExtension(file.FileName);
+                var extension = Path.GetExtension(file.FileName);
+                string newFileNameWithoutPath = $"{DateTime.Now.Ticks}_{file.ClientId}_{file.RequestId}_{file.DocType}{extension}";
+
+                bool firstChunk = true;
+                using (var inStream = file.FileData.OpenReadStream(long.MaxValue))
                 {
-                    var buffer = new byte[chunkSize];
-                    await inStream.ReadAsync(buffer, 0, buffer.Length);
-
-                    var chunk = new FileChunkDto
+                
+                    for (int i = 0; i < numChunks; i++)
                     {
-                        Data = buffer,
-                        FileName = newFileNameWithoutPath,
-                        Offset = filesQueue[file.FileId].UploadedBytes,
-                        FirstChunk = firstChunk,
-                        To = to,
-                        ClientId = file.ClientId,
-                        RequestId = file.RequestId
-                    };
+                        
+                        var buffer = new byte[chunkSize];
+                        await inStream.ReadAsync(buffer, 0, buffer.Length);
 
-                    bool success = await FilesManager!.UploadFileChunk(chunk);
-
-                    if (success)
-                    {
-
-
-                        Converted = true;
-                        isDisplaying = "none";
-                        await InvokeAsync(StateHasChanged);
-                        if (newFileNameWithoutPath.EndsWith("jpeg") || newFileNameWithoutPath.EndsWith("tiff") || newFileNameWithoutPath.EndsWith("webp"))
+                        var chunk = new FileChunkDto
                         {
-                            newFileNameWithoutPath = newFileNameWithoutPath.Substring(0, newFileNameWithoutPath.Length - 4) + file.To;
-                        }
-
-                        else
-                        {
-                            newFileNameWithoutPath = newFileNameWithoutPath.Substring(0, newFileNameWithoutPath.Length - 3) + file.To;
-                        }
-
-
-                        UpdatedFileInfo obj = new UpdatedFileInfo
-                        {
-                            UpdatedFileName = newFileNameWithoutPath
+                            Data = buffer,
+                            FileName = newFileNameWithoutPath,
+                            //Offset = filesQueue[file.FileId].UploadedBytes,
+                            FirstChunk = firstChunk,
+                            LastChunk = false,
+                            To = to,
+                            ClientId = file.ClientId,
+                            RequestId = file.RequestId
                         };
+                        _ = Task.Run(async () =>
+                        {
+                            bool success = await FilesManager!.UploadFileChunk(chunk);
+                            if (success)
+                            {
+                                isUploading = false;
+                                file.IsPending = true;
+                                file.IsUploading = false;
+                                isUploading = false;
+                                StateHasChanged();
 
-                        UpdatedFileInfos.Add(obj);
+                                Converted = true;
+                                isDisplaying = "none";
+                                await InvokeAsync(StateHasChanged);
 
+                                UpdatedFileInfo obj = new UpdatedFileInfo
+                                {
+                                    UpdatedFileName = newFileNameWithoutPath
+                                };
 
+                                UpdatedFileInfos.Add(obj);
+                            }
+                            else
+                            {
+                                isUploading = false;
+                                await InvokeAsync(StateHasChanged);
+                            }
+                        });
+
+                        firstChunk = false;
+
+                        // Update our progress data and UI
+                        //filesQueue[file.FileId].UploadedBytes += chunkSize;
+                        await InvokeAsync(StateHasChanged);
+                        
                     }
 
-
-
-                    firstChunk = false;
-
-                    // Update our progress data and UI
-                    filesQueue[file.FileId].UploadedBytes += chunkSize;
-                    await InvokeAsync(StateHasChanged);
-                }
-
-                if (remainder > 0)
-                {
-                    var buffer = new byte[remainder];
-                    await inStream.ReadAsync(buffer, 0, buffer.Length);
-
-                    var chunk = new FileChunkDto
+                    if (remainder > 0)
                     {
-                        Data = buffer,
-                        FileName = newFileNameWithoutPath,
-                        Offset = filesQueue[file.FileId].UploadedBytes,
-                        FirstChunk = firstChunk,
-                        To = to,
-                        ClientId = file.ClientId,
-                        RequestId = file.RequestId
-                    };
-                    bool success = await FilesManager!.UploadFileChunk(chunk);
+                        var buffer = new byte[remainder];
+                        await inStream.ReadAsync(buffer, 0, buffer.Length);
 
-                    if (success)
-                    {
-
-
-                        Converted = true;
-                        isDisplaying = "none";
-                        await InvokeAsync(StateHasChanged);
-                        if (newFileNameWithoutPath.EndsWith("jpeg") || newFileNameWithoutPath.EndsWith("tiff") || newFileNameWithoutPath.EndsWith("webp"))
+                        var chunk = new FileChunkDto
                         {
-                            newFileNameWithoutPath = newFileNameWithoutPath.Substring(0, newFileNameWithoutPath.Length - 4) + file.To;
-                        }
-
-                        else
-                        {
-                            newFileNameWithoutPath = newFileNameWithoutPath.Substring(0, newFileNameWithoutPath.Length - 3) + file.To;
-                        }
-
-
-                        UpdatedFileInfo obj = new UpdatedFileInfo
-                        {
-                            UpdatedFileName = newFileNameWithoutPath
+                            Data = buffer,
+                            FileName = newFileNameWithoutPath,
+                            //Offset = filesQueue[file.FileId].UploadedBytes,
+                            FirstChunk = firstChunk,
+                            LastChunk = true,
+                            To = to,
+                            ClientId = file.ClientId,
+                            RequestId = file.RequestId
                         };
+                        _ = Task.Run(async () =>
+                        {
+                            bool success = await FilesManager!.UploadFileChunk(chunk);
 
-                        UpdatedFileInfos.Add(obj);
+                            if (success)
+                            {
+                                isUploading = false;
+                                file.IsPending = true;
+                                file.IsUploading = false;
+                                StateHasChanged();
+                                var ucs = Task.Run(async () => await UploadChunksToSharepoints(file, newFileNameWithoutPath));
+                                await ucs.ContinueWith(_ =>
+                                {
+                                    file.IsPending = false;
+                                    file.HasBeenUploaded = true;
+                                });
+
+                                Converted = true;
+                                isDisplaying = "none";
+                                await InvokeAsync(StateHasChanged);
 
 
+                                UpdatedFileInfo obj = new UpdatedFileInfo
+                                {
+                                    UpdatedFileName = newFileNameWithoutPath
+                                };
+
+                                UpdatedFileInfos.Add(obj);
+
+
+                            } else {
+                                isUploading = false;
+                                file.IsFailed = true;
+                                file.IsPending = false;
+                                file.HasBeenUploaded = false;
+                                await InvokeAsync(StateHasChanged);
+                            }
+                        });
+
+                        // Update our progress data and UI
+                        //filesQueue[file.FileId].UploadedBytes += remainder;
+                        //await ListFiles();
+
+                        await InvokeAsync(StateHasChanged);
                     }
-
-                    // Update our progress data and UI
-                    filesQueue[file.FileId].UploadedBytes += remainder;
-                    //await ListFiles();
-                    await InvokeAsync(StateHasChanged);
+                
                 }
-            }
+            });
         } //UploadChunks
 
         private async Task GoBack()
@@ -215,13 +322,17 @@ namespace DocUploader.Client.Pages
         } //ClearFileQueue        
 
 
-        record FileUploadProgress(IBrowserFile File, string FileName, long Size, int FileId)
+        record FileUploadProgress(IBrowserFile File, string FileName, long Size, int FileId, string DocType)
         {
             public IBrowserFile FileData { get; set; } = File;
             public int FileId { get; set; } = FileId;
+            public string? DocType { get; set; } = DocType;
             public long UploadedBytes { get; set; }
             public double UploadedPercentage => (double)UploadedBytes / (double)Size * 100d;
             public bool HasBeenUploaded { get; set; } = false;
+            public bool IsPending { get; set; } = false;
+            public bool IsUploading { get; set; } = false;
+            public bool IsFailed { get; set; } = false;
             public string? To { get; set; }
             public int ClientId { get; set; }
             public int RequestId { get; set; }
