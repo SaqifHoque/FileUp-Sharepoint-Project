@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "7zhWnDgTZWWvcVZzaSxKVBILrXxZQZ1PFcCKNMeC50nUiZSrRiq1gtSMCrLAi8ChRRyLBYJF2NpTWHIZRpPKNA==",
+  "dgSpecHash": "g/vObR+1kyUN+tlToV6lAsGbSsLWHyISKYdxotNPtuYrhAxIog3yFPzegcir36v0kxnh68iBDcEM1ROd2ALLHg==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\Sharepoint\\sharepoint-project\\DocUploader\\Shared\\DocUploader.Shared.csproj",
+  "projectFilePath": "C:\\Projects\\Sharepoint\\test\\sharepoint-project\\DocUploader\\Shared\\DocUploader.Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Saqif\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.5\\microsoft.aspnetcore.cryptography.internal.7.0.5.nupkg.sha512",
     "C:\\Users\\Saqif\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.5\\microsoft.aspnetcore.cryptography.keyderivation.7.0.5.nupkg.sha512",

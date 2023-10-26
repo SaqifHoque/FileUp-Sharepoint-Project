@@ -1,0 +1,310 @@
+2023-10-26 15:08:51.006 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-26 15:08:51.046 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 15:08:51.048 +06:00 [INF] Hosting environment: Development
+2023-10-26 15:08:51.049 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-26 15:09:05.758 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-26 15:09:05.804 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 15:09:05.805 +06:00 [INF] Hosting environment: Development
+2023-10-26 15:09:05.806 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-26 15:09:08.417 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-26 15:12:25.956 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-26 15:14:15.429 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Request body too large. The max request body size is 30000000 bytes.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1ContentLengthMessageBody.OnReadStarting()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.MessageBody.TryStartAsync()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1ContentLengthMessageBody.ReadAsyncInternal(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream.ReadAsyncInternal(Memory`1 destination, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Text.Json.Serialization.ReadBufferState.ReadFromStreamAsync(Stream utf8Json, CancellationToken cancellationToken, Boolean fillBuffer)
+   at System.Text.Json.JsonSerializer.ReadFromStreamAsync[TValue](Stream utf8Json, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-10-26 15:16:58.490 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.AspNetCore.Server.Kestrel.Core.BadHttpRequestException: Request body too large. The max request body size is 30000000 bytes.
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1ContentLengthMessageBody.OnReadStarting()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.MessageBody.TryStartAsync()
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Http1ContentLengthMessageBody.ReadAsyncInternal(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpRequestStream.ReadAsyncInternal(Memory`1 destination, CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at System.Text.Json.Serialization.ReadBufferState.ReadFromStreamAsync(Stream utf8Json, CancellationToken cancellationToken, Boolean fillBuffer)
+   at System.Text.Json.JsonSerializer.ReadFromStreamAsync[TValue](Stream utf8Json, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter.ReadRequestBodyAsync(InputFormatterContext context, Encoding encoding)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinder.BindModelAsync(ModelBindingContext bindingContext)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.ParameterBinder.BindModelAsync(ActionContext actionContext, IModelBinder modelBinder, IValueProvider valueProvider, ParameterDescriptor parameter, ModelMetadata metadata, Object value, Object container)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-10-26 15:31:27.428 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-26 15:31:27.469 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 15:31:27.471 +06:00 [INF] Hosting environment: Development
+2023-10-26 15:31:27.473 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-26 15:31:29.765 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-26 15:32:16.128 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-26 15:49:58.010 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-26 15:49:58.047 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 15:49:58.049 +06:00 [INF] Hosting environment: Development
+2023-10-26 15:49:58.050 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-26 15:50:00.029 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-26 15:50:30.496 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-26 15:59:48.296 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-26 15:59:48.344 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 15:59:48.347 +06:00 [INF] Hosting environment: Development
+2023-10-26 15:59:48.349 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-26 15:59:50.087 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-26 16:00:21.256 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-26 16:08:46.930 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-26 16:08:46.964 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 16:08:46.969 +06:00 [INF] Hosting environment: Development
+2023-10-26 16:08:46.972 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-26 16:08:49.047 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-26 16:09:24.588 +06:00 [INF] Login Attempt for Saqifhaque@gmail.com 
+2023-10-26 16:12:17.824 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-26 16:12:17.869 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 16:12:17.871 +06:00 [INF] Hosting environment: Development
+2023-10-26 16:12:17.872 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-26 16:12:21.110 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-26 16:13:05.092 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-26 16:16:41.189 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-26 16:16:41.300 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 16:16:41.303 +06:00 [INF] Hosting environment: Development
+2023-10-26 16:16:41.305 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-26 16:16:46.616 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-26 16:17:45.540 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-26 16:22:47.125 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-26 16:22:47.165 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 16:22:47.167 +06:00 [INF] Hosting environment: Development
+2023-10-26 16:22:47.167 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-26 16:22:49.390 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-26 16:23:24.852 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-26 17:12:40.919 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-26 17:12:40.966 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 17:12:40.969 +06:00 [INF] Hosting environment: Development
+2023-10-26 17:12:40.971 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-26 17:12:43.256 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-26 17:15:39.935 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-26 17:15:40.013 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 17:15:40.030 +06:00 [INF] Hosting environment: Development
+2023-10-26 17:15:40.032 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-26 17:15:43.679 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-26 17:16:18.382 +06:00 [INF] Login Attempt for saqifhaqeu@gmail.com 
+2023-10-26 17:16:45.442 +06:00 [INF] Login Attempt for saqifhaqeu@gmail.com 
+2023-10-26 17:17:08.721 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-26 17:23:13.716 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-26 17:23:13.781 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 17:23:13.784 +06:00 [INF] Hosting environment: Development
+2023-10-26 17:23:13.785 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-26 17:23:17.425 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-26 17:38:06.287 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-26 17:45:09.421 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-26 17:45:09.464 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 17:45:09.467 +06:00 [INF] Hosting environment: Development
+2023-10-26 17:45:09.470 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-26 17:45:11.200 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-26 17:45:38.812 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-26 17:49:12.744 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-26 17:49:12.802 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 17:49:12.804 +06:00 [INF] Hosting environment: Development
+2023-10-26 17:49:12.806 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-26 17:49:15.439 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-26 17:53:24.797 +06:00 [ERR] Failed executing DbCommand (51ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `ClientsRequests` (`ClientId`, `CreateDate`, `RequestId`)
+VALUES (@p0, @p1, @p2);
+SELECT `ClientRequestId`
+FROM `ClientsRequests`
+WHERE ROW_COUNT() = 1 AND `ClientRequestId` = LAST_INSERT_ID();
+2023-10-26 17:53:24.918 +06:00 [ERR] An exception occurred in the database while saving changes for context type 'DocUploader.Server.Data.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Cannot add or update a child row: a foreign key constraint fails (`docdb8`.`clientsrequests`, CONSTRAINT `FK_ClientsRequests_Clients_ClientId` FOREIGN KEY (`ClientId`) REFERENCES `clients` (`ClientId`) ON DELETE CASCADE)
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 962
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 43
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 468
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 344
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 337
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Cannot add or update a child row: a foreign key constraint fails (`docdb8`.`clientsrequests`, CONSTRAINT `FK_ClientsRequests_Clients_ClientId` FOREIGN KEY (`ClientId`) REFERENCES `clients` (`ClientId`) ON DELETE CASCADE)
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 962
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 43
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 468
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 344
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 337
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-10-26 17:53:25.155 +06:00 [ERR] Failed executing DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = DateTime), @p2='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `ClientsRequests` (`ClientId`, `CreateDate`, `RequestId`)
+VALUES (@p0, @p1, @p2);
+SELECT `ClientRequestId`
+FROM `ClientsRequests`
+WHERE ROW_COUNT() = 1 AND `ClientRequestId` = LAST_INSERT_ID();
+2023-10-26 17:53:25.167 +06:00 [ERR] An exception occurred in the database while saving changes for context type 'DocUploader.Server.Data.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Cannot add or update a child row: a foreign key constraint fails (`docdb8`.`clientsrequests`, CONSTRAINT `FK_ClientsRequests_Clients_ClientId` FOREIGN KEY (`ClientId`) REFERENCES `clients` (`ClientId`) ON DELETE CASCADE)
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 962
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 43
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 468
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 344
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 337
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> MySqlConnector.MySqlException (0x80004005): Cannot add or update a child row: a foreign key constraint fails (`docdb8`.`clientsrequests`, CONSTRAINT `FK_ClientsRequests_Clients_ClientId` FOREIGN KEY (`ClientId`) REFERENCES `clients` (`ClientId`) ON DELETE CASCADE)
+   at MySqlConnector.Core.ServerSession.ReceiveReplyAsyncAwaited(ValueTask`1 task) in /_/src/MySqlConnector/Core/ServerSession.cs:line 962
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in /_/src/MySqlConnector/Core/ResultSet.cs:line 43
+   at MySqlConnector.MySqlDataReader.ActivateResultSet(CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 130
+   at MySqlConnector.MySqlDataReader.CreateAsync(CommandListPosition commandListPosition, ICommandPayloadCreator payloadCreator, IDictionary`2 cachedProcedures, IMySqlCommand command, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlDataReader.cs:line 468
+   at MySqlConnector.Core.CommandExecutor.ExecuteReaderAsync(IReadOnlyList`1 commands, ICommandPayloadCreator payloadCreator, CommandBehavior behavior, Activity activity, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/Core/CommandExecutor.cs:line 56
+   at MySqlConnector.MySqlCommand.ExecuteReaderAsync(CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 344
+   at MySqlConnector.MySqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken) in /_/src/MySqlConnector/MySqlCommand.cs:line 337
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2023-10-26 17:53:54.997 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-26 17:53:55.044 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 17:53:55.047 +06:00 [INF] Hosting environment: Development
+2023-10-26 17:53:55.049 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-26 17:53:57.202 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-26 17:54:28.384 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-26 19:03:07.856 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-26 19:03:07.937 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 19:03:07.939 +06:00 [INF] Hosting environment: Development
+2023-10-26 19:03:07.940 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-26 19:04:28.910 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-26 19:04:28.960 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 19:04:28.962 +06:00 [INF] Hosting environment: Development
+2023-10-26 19:04:28.963 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-26 19:04:31.305 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-26 19:05:02.028 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-26 19:12:26.492 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-26 19:12:26.555 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 19:12:26.559 +06:00 [INF] Hosting environment: Development
+2023-10-26 19:12:26.562 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-26 19:12:28.793 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-26 19:13:00.322 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-26 19:17:35.568 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-26 19:17:35.632 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 19:17:35.635 +06:00 [INF] Hosting environment: Development
+2023-10-26 19:17:35.636 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-26 19:17:37.904 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-26 19:18:13.387 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-26 19:21:57.000 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-26 19:21:57.047 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 19:21:57.049 +06:00 [INF] Hosting environment: Development
+2023-10-26 19:21:57.050 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-26 19:21:59.226 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-26 19:22:27.995 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-26 19:30:45.213 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-26 19:30:45.263 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 19:30:45.265 +06:00 [INF] Hosting environment: Development
+2023-10-26 19:30:45.268 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-26 19:30:47.492 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-26 19:32:01.388 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-26 19:40:51.319 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-26 19:40:51.406 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 19:40:51.410 +06:00 [INF] Hosting environment: Development
+2023-10-26 19:40:51.414 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-26 19:40:53.754 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-26 20:04:05.779 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-26 20:30:30.993 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-26 20:30:31.133 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 20:30:31.136 +06:00 [INF] Hosting environment: Development
+2023-10-26 20:30:31.139 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-26 20:30:35.623 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-26 20:31:26.177 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-26 20:38:52.899 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-26 20:38:53.037 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 20:38:53.062 +06:00 [INF] Hosting environment: Development
+2023-10-26 20:38:53.067 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-26 20:38:57.437 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-26 20:39:40.847 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-26 22:06:26.832 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-26 22:06:26.898 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 22:06:26.900 +06:00 [INF] Hosting environment: Development
+2023-10-26 22:06:26.902 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-26 22:06:30.851 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-26 22:07:13.883 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-26 22:18:03.468 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-26 22:18:03.499 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-26 22:18:03.502 +06:00 [INF] Hosting environment: Development
+2023-10-26 22:18:03.503 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-26 22:18:05.712 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-26 22:18:46.662 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 

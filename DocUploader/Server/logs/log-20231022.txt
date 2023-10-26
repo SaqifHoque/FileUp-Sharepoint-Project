@@ -1,0 +1,27 @@
+2023-10-22 12:25:08.073 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-22 12:25:08.176 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-22 12:25:08.181 +06:00 [INF] Hosting environment: Development
+2023-10-22 12:25:08.188 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-22 12:25:33.703 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-22 12:25:33.794 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-22 12:25:33.797 +06:00 [INF] Hosting environment: Development
+2023-10-22 12:25:33.799 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-22 12:26:23.116 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-22 12:26:23.238 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-22 12:26:23.245 +06:00 [INF] Hosting environment: Development
+2023-10-22 12:26:23.251 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-22 12:31:33.993 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-22 12:31:34.090 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-22 12:31:34.096 +06:00 [INF] Hosting environment: Development
+2023-10-22 12:31:34.102 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-22 12:31:39.454 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-22 12:32:21.670 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-22 12:32:23.268 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-22 12:34:22.673 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-22 12:34:22.755 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-22 12:34:22.760 +06:00 [INF] Hosting environment: Development
+2023-10-22 12:34:22.765 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-22 12:34:26.375 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-22 12:35:07.412 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-22 12:35:07.412 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-22 12:35:10.491 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 

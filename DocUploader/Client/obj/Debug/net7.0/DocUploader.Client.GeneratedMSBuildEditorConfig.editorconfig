@@ -9,89 +9,89 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = DocUploader.Client
 build_property.RootNamespace = DocUploader.Client
-build_property.ProjectDir = C:\Projects\Sharepoint\sharepoint-project\DocUploader\Client\
+build_property.ProjectDir = C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Client\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Projects\Sharepoint\sharepoint-project\DocUploader\Client
+build_property.MSBuildProjectDirectory = C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Client
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Projects/Sharepoint/sharepoint-project/DocUploader/Client/App.razor]
+[C:/Projects/Sharepoint/test/sharepoint-project/DocUploader/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Sharepoint/sharepoint-project/DocUploader/Client/Pages/Counter.razor]
+[C:/Projects/Sharepoint/test/sharepoint-project/DocUploader/Client/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Sharepoint/sharepoint-project/DocUploader/Client/Pages/Document.razor]
+[C:/Projects/Sharepoint/test/sharepoint-project/DocUploader/Client/Pages/Document.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRG9jdW1lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Sharepoint/sharepoint-project/DocUploader/Client/Pages/FetchData.razor]
+[C:/Projects/Sharepoint/test/sharepoint-project/DocUploader/Client/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Sharepoint/sharepoint-project/DocUploader/Client/Pages/GenericFileUploader.razor]
+[C:/Projects/Sharepoint/test/sharepoint-project/DocUploader/Client/Pages/GenericFileUploader.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VuZXJpY0ZpbGVVcGxvYWRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Sharepoint/sharepoint-project/DocUploader/Client/Pages/Index.razor]
+[C:/Projects/Sharepoint/test/sharepoint-project/DocUploader/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Sharepoint/sharepoint-project/DocUploader/Client/Pages/PostClient.razor]
+[C:/Projects/Sharepoint/test/sharepoint-project/DocUploader/Client/Pages/PostClient.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9zdENsaWVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Sharepoint/sharepoint-project/DocUploader/Client/Pages/PostDocument.razor]
+[C:/Projects/Sharepoint/test/sharepoint-project/DocUploader/Client/Pages/PostDocument.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9zdERvY3VtZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Sharepoint/sharepoint-project/DocUploader/Client/Pages/PostRequest.razor]
+[C:/Projects/Sharepoint/test/sharepoint-project/DocUploader/Client/Pages/PostRequest.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUG9zdFJlcXVlc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Sharepoint/sharepoint-project/DocUploader/Client/Pages/Users/Login.razor]
+[C:/Projects/Sharepoint/test/sharepoint-project/DocUploader/Client/Pages/Users/Login.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcTG9naW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Sharepoint/sharepoint-project/DocUploader/Client/Pages/Users/Logout.razor]
+[C:/Projects/Sharepoint/test/sharepoint-project/DocUploader/Client/Pages/Users/Logout.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcTG9nb3V0LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Sharepoint/sharepoint-project/DocUploader/Client/Pages/Users/Register.razor]
+[C:/Projects/Sharepoint/test/sharepoint-project/DocUploader/Client/Pages/Users/Register.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcUmVnaXN0ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Sharepoint/sharepoint-project/DocUploader/Client/Shared/CheckEmail.razor]
+[C:/Projects/Sharepoint/test/sharepoint-project/DocUploader/Client/Shared/CheckEmail.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENoZWNrRW1haWwucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Sharepoint/sharepoint-project/DocUploader/Client/Shared/RedirectToLogin.razor]
+[C:/Projects/Sharepoint/test/sharepoint-project/DocUploader/Client/Shared/RedirectToLogin.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFJlZGlyZWN0VG9Mb2dpbi5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Sharepoint/sharepoint-project/DocUploader/Client/Shared/SurveyPrompt.razor]
+[C:/Projects/Sharepoint/test/sharepoint-project/DocUploader/Client/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Sharepoint/sharepoint-project/DocUploader/Client/Shared/Verified.razor]
+[C:/Projects/Sharepoint/test/sharepoint-project/DocUploader/Client/Shared/Verified.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFZlcmlmaWVkLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Sharepoint/sharepoint-project/DocUploader/Client/_Imports.razor]
+[C:/Projects/Sharepoint/test/sharepoint-project/DocUploader/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Projects/Sharepoint/sharepoint-project/DocUploader/Client/Pages/FileUploader.razor]
+[C:/Projects/Sharepoint/test/sharepoint-project/DocUploader/Client/Pages/FileUploader.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmlsZVVwbG9hZGVyLnJhem9y
 build_metadata.AdditionalFiles.CssScope = b-utuiv01l1e
 
-[C:/Projects/Sharepoint/sharepoint-project/DocUploader/Client/Shared/MainLayout.razor]
+[C:/Projects/Sharepoint/test/sharepoint-project/DocUploader/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-qpf3it5hbg
 
-[C:/Projects/Sharepoint/sharepoint-project/DocUploader/Client/Shared/NavMenu.razor]
+[C:/Projects/Sharepoint/test/sharepoint-project/DocUploader/Client/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-j5ryz02dfy
