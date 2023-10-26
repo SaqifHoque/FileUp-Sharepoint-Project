@@ -1,5 +1,6 @@
 ﻿@page "/document"
 @inject HttpClient _httpClient
+@inject IJSRuntime JS
 <h3>Get Documents</h3>
 
 <EditForm Model="requestDocuments" OnValidSubmit="OnSubmit">
@@ -43,6 +44,7 @@
                     <th>Document Path</th>
 
                     <th>RequestId Internal</th>
+                    <th>Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -52,8 +54,11 @@
                         <td>@requestDocument.DocumentIdInternal</td>
                         <td>@requestDocument.DocumentsName!.Split("\\")[@requestDocument.DocumentsName.Split("\\").Length-1]</td>
                         <td>@requestDocument.DocumentsPath</td>
-
-                        <td>@requestDocument.ExternalRequestId</td>
+                        <td></td>
+                        @* <td class="text-end"><button type="button" class="btn btn-sm btn-link" @onclick="(() => DownloadFile(requestDocument.DocumentsName!.Split('\\')[requestDocument.DocumentsName.Split('\\').Length-1]))">Download</button></td> *@
+                        <td class="text-end">
+                            <button type="button" class="btn btn-sm btn-link" onclick="downloadFile('@requestDocument.DocumentsName.Split('\\').LastOrDefault()')">Download</button>
+                        </td>
                     </tr>
                 }
             </tbody>
@@ -61,6 +66,24 @@
     </div>
 }
 
+<script>
+    function downloadFile(fileName, content) {
+        fetch(`/api/Files/downloadFile/${fileName}`)
+            .then(response => response.blob())
+            .then(blob => {
+                const url = URL.createObjectURL(blob);
+                const link = document.createElement('a');
+                link.href = url;
+                link.setAttribute('download', fileName);
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            })
+            .catch(error => {
+                console.error('Download failed:', error);
+            });
+    }
+</script>
 
 
 
@@ -84,5 +107,29 @@
         Console.WriteLine(requestId);
         requestDocuments = await _httpClient.GetFromJsonAsync<IEnumerable<ExternalRequestDocument>>($"api/externals/documents/{clientId}/{requestId}");
         StateHasChanged();
+    }
+
+    [JSInvokable]
+    private async void DownloadFile(string fileName)
+    {
+        //message = "Downloading... Please Wait";
+
+        string encodedString = System.Uri.EscapeDataString(fileName);
+
+
+        var response = await _httpClient.GetAsync($"/api/Files/downloadFile/{fileName}");
+        var content = await response!.Content.ReadAsByteArrayAsync();
+        if (content.Length > 0)
+        {
+            //message = "Success";
+            await InvokeAsync(StateHasChanged);
+            await JS.InvokeAsync<object>("downloadFile", fileName, content);
+           
+        }
+        else
+        {
+            //message = "Oops! Download Failed";
+            await InvokeAsync(StateHasChanged);
+        }
     }
 }
