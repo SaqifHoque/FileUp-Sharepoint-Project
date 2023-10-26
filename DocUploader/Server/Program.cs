@@ -11,6 +11,7 @@ using Microsoft.Extensions.FileProviders;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
 using System.Text;
+using DocUploader.Client.Services.SharePoint;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,8 +21,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 //MySQL DB Conn
 string _GetConnStringName = builder.Configuration.GetConnectionString("DefaultConnection")!;
-//builder.Services.AddDbContextPool<ApplicationDbContext>(options => options.UseMySql(_GetConnStringName, ServerVersion.AutoDetect(_GetConnStringName)));
-builder.Services.AddDbContextPool<ApplicationDbContext>(options => options.UseSqlServer(_GetConnStringName, opt => opt.CommandTimeout((int)TimeSpan.FromMinutes(5).TotalSeconds)));
+builder.Services.AddDbContextPool<ApplicationDbContext>(options => options.UseMySql(_GetConnStringName, ServerVersion.AutoDetect(_GetConnStringName)));
 
 
 //Email Config Start
@@ -32,6 +32,17 @@ var emailConfig = builder.Configuration
 builder.Services.AddSingleton(emailConfig!);
 builder.Services.AddScoped<IEmailService, EmailService>();
 //Email Config End
+
+//SharePoint Config Start
+var sharePointConfig = builder.Configuration
+    .GetSection("SharePointConfiguration")
+    .Get<SharePointConfiguration>();
+
+builder.Services.AddSingleton(sharePointConfig!);
+builder.Services.AddScoped<ISharePointService, SharePointService>();
+//SharePoint Config End
+
+builder.Services.AddScoped<IEmailService, EmailService>();
 
 //Identity Start
 builder.Services.AddIdentityCore<ApiUser>()
