@@ -23,7 +23,8 @@ namespace DocUploader.Shared.Models
         public string? Password { get; set; }
 
         public ICollection<ClientsRequest>? ClientsRequests { get; set; }    
-        public ICollection<UploadedDocuments>? UploadedDocuments { get; set; }    
+        public ICollection<UploadedDocuments>? UploadedDocuments { get; set; }
+        public ICollection<ClientDocumentCategory> ClientDocumentCategories { get; set; }
 
     }
 }
