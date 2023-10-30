@@ -19,77 +19,12 @@ namespace DocUploader.Server.Controllers
   
         private readonly ApplicationDbContext _context;
         private readonly ISharePointService _sharePointService;
-        //private readonly ConcurrentDictionary<string, MemoryStream> fileChunks = new ConcurrentDictionary<string, MemoryStream>();
+        private readonly Dictionary<string, List<byte[]>> fileChunks = new Dictionary<string, List<byte[]>>();
         public FilesController(ApplicationDbContext context, ISharePointService sharePointService)
         {
             _context = context;
             _sharePointService = sharePointService;
         }
-
-        [HttpPost("UploadFileChunk")]
-        public async Task<bool> UploadFileChunk([FromBody] FileChunkDto fileChunkDto)
-        {
-            try
-            {
-                // get the local filename
-                string filePath = Environment.CurrentDirectory + "\\StaticFiles\\";
-                string fileName = filePath + fileChunkDto.FileName;
-
-                // delete the file if necessary
-                if (fileChunkDto.FirstChunk && System.IO.File.Exists(fileName))
-                    System.IO.File.Delete(fileName);
-
-                var splitDocName = fileChunkDto.FileName.Split("_");
-                var docName = splitDocName.Last();
-
-                //var uploadedDocuments = await _context.TableModels
-                //    .Where(x => x.ClientId == fileChunkDto.ClientId && x.DocumentName.Contains(docName)).ToListAsync();
-
-                //if(uploadedDocuments.Count > 0)
-                //{
-                //    return false;
-                //}
-
-
-
-                var extention = Path.GetExtension(fileChunkDto.FileName).ToLower();
-                var justFileName = Path.GetFileNameWithoutExtension(fileChunkDto.FileName);
-                var (fileName2, fileType) = GetFileNameFileType(fileChunkDto.To!, justFileName);
-
-
-                var to = fileChunkDto.To!.ToLower();
-
-                var clientsRequest = new ClientsRequest()
-                {
-                    ClientId = fileChunkDto.ClientId,
-                    RequestId = fileChunkDto.RequestId,
-                    CreateDate = DateTime.UtcNow
-
-                };
-
-                await _context.ClientsRequests.AddAsync(clientsRequest);
-                await _context.SaveChangesAsync();
-
-                string filenameAfterConvertion = await UploadDocumentToS3(fileChunkDto, fileName, fileType);
-
-                if (filenameAfterConvertion != null)
-                {
-                    return true;
-                }
-
-                return false;
-
-
-            }
-            catch (Exception ex)
-            {
-                var msg = ex.Message;
-                return false;
-
-            }
-
-
-        } //UploadFileChunk
 
         //[HttpPost("UploadFileChunk")]
         //public async Task<bool> UploadFileChunk([FromBody] FileChunkDto fileChunkDto)
@@ -101,57 +36,49 @@ namespace DocUploader.Server.Controllers
         //        string fileName = filePath + fileChunkDto.FileName;
 
         //        // delete the file if necessary
-        //        //if (fileChunkDto.FirstChunk && System.IO.File.Exists(fileName))
-        //        //    System.IO.File.Delete(fileName);
+        //        if (fileChunkDto.FirstChunk && System.IO.File.Exists(fileName))
+        //            System.IO.File.Delete(fileName);
 
-        //        if (!fileChunks.TryGetValue(fileName, out MemoryStream? memoryStream))
+        //        var splitDocName = fileChunkDto.FileName.Split("_");
+        //        var docName = splitDocName.Last();
+
+        //        //var uploadedDocuments = await _context.TableModels
+        //        //    .Where(x => x.ClientId == fileChunkDto.ClientId && x.DocumentName.Contains(docName)).ToListAsync();
+
+        //        //if (uploadedDocuments.Count > 0)
+        //        //{
+        //        //    return false;
+        //        //}
+
+
+
+        //        var extention = Path.GetExtension(fileChunkDto.FileName).ToLower();
+        //        var justFileName = Path.GetFileNameWithoutExtension(fileChunkDto.FileName);
+        //        var (fileName2, fileType) = GetFileNameFileType(fileChunkDto.To!, justFileName);
+
+
+        //        var to = fileChunkDto.To!.ToLower();
+
+        //        var clientsRequest = new ClientsRequest()
         //        {
-        //            memoryStream = new MemoryStream();
-        //            fileChunks.TryAdd(fileName, memoryStream);
-        //        }
+        //            ClientId = fileChunkDto.ClientId,
+        //            RequestId = fileChunkDto.RequestId,
+        //            CreateDate = DateTime.UtcNow
 
-        //        memoryStream.Seek(fileChunkDto.Offset, SeekOrigin.Begin);
-        //        await memoryStream.WriteAsync(fileChunkDto.Data!, 0, fileChunkDto.Data!.Length);
+        //        };
 
-        //        if (fileChunkDto.LastChunk)
+        //        await _context.ClientsRequests.AddAsync(clientsRequest);
+        //        await _context.SaveChangesAsync();
+
+        //        string filenameAfterConvertion = await UploadDocumentToS3(fileChunkDto, fileName, fileType);
+
+        //        if (filenameAfterConvertion != null)
         //        {
-        //            using (FileStream fileStream = new FileStream(fileName, FileMode.Create, FileAccess.Write))
-        //            {
-        //                memoryStream.Seek(0, SeekOrigin.Begin);
-        //                await memoryStream.CopyToAsync(fileStream);
-        //            }
-
-        //            memoryStream.Dispose();
-
-        //            var extention = Path.GetExtension(fileChunkDto.FileName).ToLower();
-        //            var justFileName = Path.GetFileNameWithoutExtension(fileChunkDto.FileName);
-        //            var (fileName2, fileType) = GetFileNameFileType(fileChunkDto.To!, justFileName);
-
-
-        //            var to = fileChunkDto.To!.ToLower();
-
-        //            var clientsRequest = new ClientsRequest()
-        //            {
-        //                ClientId = fileChunkDto.ClientId,
-        //                RequestId = fileChunkDto.RequestId,
-        //                CreateDate = DateTime.UtcNow
-
-        //            };
-
-        //            await _context.ClientsRequests.AddAsync(clientsRequest);
-        //            await _context.SaveChangesAsync();
-
-        //            string filenameAfterConvertion = await UploadDocumentToS3(fileChunkDto, fileName, fileType);
-
-        //            if (filenameAfterConvertion != null)
-        //            {
-        //                return true;
-        //            }
-
-        //            return false;
+        //            return true;
         //        }
 
         //        return false;
+
 
         //    }
         //    catch (Exception ex)
@@ -163,6 +90,79 @@ namespace DocUploader.Server.Controllers
 
 
         //} //UploadFileChunk
+
+        [HttpPost("UploadFileChunk")]
+        public async Task<bool> UploadFileChunk([FromBody] FileChunkDto fileChunkDto)
+        {
+            try
+            {
+                // get the local filename
+                string filePath = Environment.CurrentDirectory + "\\StaticFiles\\";
+                string fileName = filePath + fileChunkDto.FileName;
+
+                // delete the file if necessary
+                //if (fileChunkDto.FirstChunk && System.IO.File.Exists(fileName))
+                //    System.IO.File.Delete(fileName);
+
+                if (!fileChunks.ContainsKey(fileName))
+                {
+                    fileChunks[fileName] = new List<byte[]>();
+                }
+
+                fileChunks[fileName].Add(fileChunkDto.Data!);
+
+                if (fileChunkDto.LastChunk)
+                {
+                    using (FileStream fileStream = new FileStream(fileName, FileMode.Create, FileAccess.Write))
+                    {
+                        foreach (var chunk in fileChunks[fileName])
+                        {
+                            await fileStream.WriteAsync(chunk, 0, chunk.Length);
+                        }
+                    }
+
+                    fileChunks[fileName].Clear();
+
+                    var extention = Path.GetExtension(fileChunkDto.FileName).ToLower();
+                    var justFileName = Path.GetFileNameWithoutExtension(fileChunkDto.FileName);
+                    var (fileName2, fileType) = GetFileNameFileType(fileChunkDto.To!, justFileName);
+
+
+                    var to = fileChunkDto.To!.ToLower();
+
+                    var clientsRequest = new ClientsRequest()
+                    {
+                        ClientId = fileChunkDto.ClientId,
+                        RequestId = fileChunkDto.RequestId,
+                        CreateDate = DateTime.UtcNow
+
+                    };
+
+                    await _context.ClientsRequests.AddAsync(clientsRequest);
+                    await _context.SaveChangesAsync();
+
+                    string filenameAfterConvertion = await UploadDocumentToS3(fileChunkDto, fileName, fileType);
+
+                    if (filenameAfterConvertion != null)
+                    {
+                        return true;
+                    }
+
+                    return false;
+                }
+
+                return false;
+
+            }
+            catch (Exception ex)
+            {
+                var msg = ex.Message;
+                return false;
+
+            }
+
+
+        } //UploadFileChunk
 
         [HttpPost("UploadFileChunkToSharePoint")]
         public async Task<bool> UploadFileChunkToSharePoint([FromBody] FileChunkDto fileChunkDto)
@@ -362,6 +362,7 @@ namespace DocUploader.Server.Controllers
             return clients;
         }
 
+
         [HttpGet("getrequests")]
         public async Task<IEnumerable<Request>> GetRequests()
         {
@@ -380,12 +381,28 @@ namespace DocUploader.Server.Controllers
             return uploadedDocuments;
 
         }
+        [HttpGet("getDocumentCategoryByClientId/{id?}")]
+        public async Task<IEnumerable<ClientDocumentCategoryDto>> GetDocumentCategoriesByClient(int id)
+        {
+
+            var result = await (from cd in _context.ClientDocumentCategories
+                                join c in _context.Clients on cd.ClientId equals c.ClientId
+                                join dc in _context.DocumentCategories on cd.DocumentCategoryId equals dc.DocumentCategoryId
+                                where c.ClientId == id
+                                select new ClientDocumentCategoryDto
+                                {
+                                    Id = cd.Id,
+                                    DocumentCategoryName = dc.CategoryName,
+                                    ClientName = c.ClientName
+                                }).ToListAsync();
+
+            return result;
+
+        }
 
         [HttpGet("getUploadedFileByRequestId/{id?}")]
         public async Task<IEnumerable<TableModel>> GetDocumentsByRequest(int id)
-        {
-
-            
+        {    
 
             var requestDocs = await _context.RequestDocuments
                 .Where(x => x.RequestId == id).FirstOrDefaultAsync();
@@ -394,12 +411,10 @@ namespace DocUploader.Server.Controllers
                 .Where(x => x.RequestId == id).FirstOrDefaultAsync();
 
            var uploadedDocuments = await _context.TableModels
-                .Where(x => x.RequestId == id).ToListAsync();
+                .Where(x => x.RequestId == id).OrderByDescending(x => x.Id).ToListAsync();
 
                 return uploadedDocuments;
            
-            
-
         }
 
         [HttpGet("getclientsId/{email?}")]
