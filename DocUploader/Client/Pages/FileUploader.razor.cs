@@ -63,6 +63,7 @@ namespace DocUploader.Client.Pages
                     file.ClientId = clientId;
                     file.RequestId = requestId;
                     file.IsUploading = true;
+                    file.IsFailed = false;
                     var uc = Task.Run(async () => await UploadChunks(file));
                                         
                 }
@@ -164,8 +165,8 @@ namespace DocUploader.Client.Pages
                 isUploading = true;
                 await InvokeAsync(StateHasChanged);
                 var TotalBytes = file.Size;
-                //long chunkSize = 4000000;
-                long chunkSize = long.MaxValue;
+                long chunkSize = 4000000;
+                //long chunkSize = long.MaxValue;
                 long numChunks = TotalBytes / chunkSize;
                 long remainder = TotalBytes % chunkSize;
                 string to = file.To!;
@@ -188,15 +189,15 @@ namespace DocUploader.Client.Pages
                         {
                             Data = buffer,
                             FileName = newFileNameWithoutPath,
-                            //Offset = filesQueue[file.FileId].UploadedBytes,
+                            Offset = filesQueue[file.FileId].UploadedBytes,
                             FirstChunk = firstChunk,
                             LastChunk = false,
                             To = to,
                             ClientId = file.ClientId,
                             RequestId = file.RequestId
                         };
-                        _ = Task.Run(async () =>
-                        {
+                        //_ = Task.Run(async () =>
+                        //{
                             bool success = await FilesManager!.UploadFileChunk(chunk);
                             if (success)
                             {
@@ -222,7 +223,7 @@ namespace DocUploader.Client.Pages
                                 isUploading = false;
                                 await InvokeAsync(StateHasChanged);
                             }
-                        });
+                        //});
 
                         firstChunk = false;
 
@@ -237,19 +238,19 @@ namespace DocUploader.Client.Pages
                         var buffer = new byte[remainder];
                         await inStream.ReadAsync(buffer, 0, buffer.Length);
 
-                        var chunk = new FileChunkDto
-                        {
-                            Data = buffer,
-                            FileName = newFileNameWithoutPath,
-                            //Offset = filesQueue[file.FileId].UploadedBytes,
-                            FirstChunk = firstChunk,
-                            LastChunk = true,
-                            To = to,
-                            ClientId = file.ClientId,
-                            RequestId = file.RequestId
-                        };
                         _ = Task.Run(async () =>
                         {
+                            var chunk = new FileChunkDto
+                            {
+                                Data = buffer,
+                                FileName = newFileNameWithoutPath,
+                                Offset = filesQueue[file.FileId].UploadedBytes,
+                                FirstChunk = firstChunk,
+                                LastChunk = true,
+                                To = to,
+                                ClientId = file.ClientId,
+                                RequestId = file.RequestId
+                            };
                             bool success = await FilesManager!.UploadFileChunk(chunk);
 
                             if (success)
@@ -258,12 +259,12 @@ namespace DocUploader.Client.Pages
                                 file.IsPending = true;
                                 file.IsUploading = false;
                                 StateHasChanged();
-                                var ucs = Task.Run(async () => await UploadChunksToSharepoints(file, newFileNameWithoutPath));
-                                await ucs.ContinueWith(_ =>
-                                {
-                                    file.IsPending = false;
-                                    file.HasBeenUploaded = true;
-                                });
+                                //var ucs = Task.Run(async () => await UploadChunksToSharepoints(file, newFileNameWithoutPath));
+                                //await ucs.ContinueWith(_ =>
+                                //{
+                                //    file.IsPending = false;
+                                //    file.HasBeenUploaded = true;
+                                //});
 
                                 Converted = true;
                                 isDisplaying = "none";
