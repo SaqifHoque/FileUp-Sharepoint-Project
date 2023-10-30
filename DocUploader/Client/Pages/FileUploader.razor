@@ -1,4 +1,5 @@
 ﻿@page "/upload"
+@using DocUploader.Shared.Dtos;
 @inject HttpClient Http
 @inject IJSRuntime JS
 @inject AuthenticationStateProvider GetAuthenticationStateAsync
@@ -32,7 +33,7 @@
                     <div style="padding:3px;">
                         @if (clientId != 0)
                         {
-                            <button class="btn btn-sm" style="display: inline-block;background-color:#0b2a4a; color: white;" @onclick="()=>DocumentByRequestId(clientId)">View</button>
+                            <button class="btn btn-sm" style="display: inline-block;background-color:#0b2a4a; color: white;" @onclick="()=>DocumentByClientId(clientId)">View</button>
                         }
                     </div>
                 </div>
@@ -67,8 +68,26 @@
 
         <div>
         </div>
-
-        <div style="display:flex; justify-content:flex-start; margin-bottom:16px;">
+        @{
+            var index = 1;
+        }
+        @foreach (var docCategory in documentCategories.OrderBy(x => x.Id))
+        {
+            <div style="display:flex; justify-content:flex-start; margin-bottom:16px;">
+                <div style="padding:5px;">
+                    <p>@index: @docCategory.DocumentCategoryName</p>
+                </div>
+                <div style="margin-left:5px;">
+                    <InputFile OnChange="(e) => AddFilesToQueue(e, docCategory.DocumentCategoryName)"
+                    @ondragenter="HandleDragEnter"
+                    @ondragleave="HandleDragLeave"
+                               disabled="@isUploading"
+                               style="width:100%;" />
+                </div>
+            </div>
+            index++;
+        }
+       @*  <div style="display:flex; justify-content:flex-start; margin-bottom:16px;">
             @{
                 string docType = "W2 - PR";
             }
@@ -120,7 +139,7 @@
             </div>
 
 
-        </div>
+        </div> *@
     </div>
 </div>
 
@@ -271,6 +290,7 @@
     private List<DocUploader.Shared.Models.Client>? clients = new List<DocUploader.Shared.Models.Client>();
     private List<DocUploader.Shared.Models.Request>? requests = new List<DocUploader.Shared.Models.Request>();
     private List<DocUploader.Shared.Models.TableModel>? documents = new List<DocUploader.Shared.Models.TableModel>();
+    private List<ClientDocumentCategoryDto>? documentCategories = new List<ClientDocumentCategoryDto>();
 
 
     protected override async Task OnInitializedAsync()
@@ -284,6 +304,13 @@
         clients = await Http.GetFromJsonAsync<List<DocUploader.Shared.Models.Client>>("api/files/getclients");
         requests = await Http.GetFromJsonAsync<List<DocUploader.Shared.Models.Request>>("api/files/getrequests");
         await DocumentByClientId(clientId);
+        //await DocumentCategoriesByClientId(clientId);
+    }
+
+    private async Task DocumentCategoriesByClientId(int id)
+    {
+        documentCategories = await Http
+        .GetFromJsonAsync<List<ClientDocumentCategoryDto>>($"api/files/getDocumentCategoryByClientId/{id}");
     }
 
 
@@ -293,6 +320,7 @@
         docTable = !docTable;
         documents = await Http
         .GetFromJsonAsync<List<DocUploader.Shared.Models.TableModel>>($"api/files/getUploadedFileByClientId/{id}");
+        await DocumentCategoriesByClientId(id);
     }
 
     private async Task DocumentByRequestId(int id)
