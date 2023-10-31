@@ -21,6 +21,8 @@ namespace DocUploader.Server.Data
         public DbSet<TableModel> TableModels { get; set; }
         public DbSet<GenericModel> GenericModels { get; set; }
         public DbSet<TwoFactorAuth> TwoFactorAuths { get; set; }
+        public DbSet<DocumentCategory> DocumentCategories { get; set; }
+        public DbSet<ClientDocumentCategory> ClientDocumentCategories { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

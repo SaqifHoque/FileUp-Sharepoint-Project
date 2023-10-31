@@ -94,16 +94,16 @@ namespace DocUploader.Server.Migrations
                             Id = "KRMN8-SHDA3-BGMNP-MP88",
                             AccessFailedCount = 0,
                             ClientName = "Admin",
-                            ConcurrencyStamp = "26c0b4af-2254-431a-8cc4-eec50faaf5e0",
+                            ConcurrencyStamp = "59556a30-ebb2-45a4-aaec-83e11c45d0cd",
                             Email = "admin@ltarsde.com",
                             EmailConfirmed = false,
                             Last4Digits = "1234",
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@LTARSDE.COM",
                             NormalizedUserName = "ADMIN@LTARSDE.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEJmCUaL2Uwa7K4Aa0b4u+iHgfIqOmp1BOiMMhRSrmAsr7HnyDYnGIKXkSeDZoLrn9A==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELcelnE2Y2ciAfH0CiIc3VUuFJMMOuftQRLEWrluKpKNrZes3h3oFzIUlv1JoANJTw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "1716f997-2f56-4cfa-bf6c-eb56d5c7a597",
+                            SecurityStamp = "5b10def5-303c-481f-abe9-ada041a043fb",
                             TwoFactorEnabled = false,
                             UserName = "admin@ltarsde.com"
                         },
@@ -112,16 +112,16 @@ namespace DocUploader.Server.Migrations
                             Id = "SHDRE-COM2T-FF99Z-GM55",
                             AccessFailedCount = 0,
                             ClientName = "Admin",
-                            ConcurrencyStamp = "b59c5e9e-7e42-4158-ad9d-d3110a2ce240",
+                            ConcurrencyStamp = "7d934d64-20a6-4b17-be0d-04ce2faf182d",
                             Email = "user@ltarsde.com",
                             EmailConfirmed = false,
                             Last4Digits = "1234",
                             LockoutEnabled = false,
                             NormalizedEmail = "USER@LTARSDE.COM",
                             NormalizedUserName = "USER@LTARSDE.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAENukjePolyxVehGzFW2T9/z61ZNV9hZQ5nTXF/avONABuAYZCymUdm7zP7IPXMbrZA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEGDgiphYiUlIwqbQ5/R3FpIY5bj4/ZGzhefh+/GZ9vh6jzE+IlN92PTLz/XdBZZ3HA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "e6bbb6fb-7699-4e90-9dd5-03945097ef6c",
+                            SecurityStamp = "ae915261-f211-4cb2-ab64-d87b1763e556",
                             TwoFactorEnabled = false,
                             UserName = "user@ltarsde.com"
                         });
@@ -156,6 +156,27 @@ namespace DocUploader.Server.Migrations
                     b.ToTable("Clients");
                 });
 
+            modelBuilder.Entity("DocUploader.Shared.Models.ClientDocumentCategory", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("ClientId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DocumentCategoryId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ClientId");
+
+                    b.HasIndex("DocumentCategoryId");
+
+                    b.ToTable("ClientDocumentCategories");
+                });
+
             modelBuilder.Entity("DocUploader.Shared.Models.ClientsRequest", b =>
                 {
                     b.Property<int>("ClientRequestId")
@@ -178,6 +199,21 @@ namespace DocUploader.Server.Migrations
                     b.HasIndex("RequestId");
 
                     b.ToTable("ClientsRequests");
+                });
+
+            modelBuilder.Entity("DocUploader.Shared.Models.DocumentCategory", b =>
+                {
+                    b.Property<int>("DocumentCategoryId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("CategoryName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.HasKey("DocumentCategoryId");
+
+                    b.ToTable("DocumentCategories");
                 });
 
             modelBuilder.Entity("DocUploader.Shared.Models.GenericModel", b =>
@@ -468,6 +504,25 @@ namespace DocUploader.Server.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("DocUploader.Shared.Models.ClientDocumentCategory", b =>
+                {
+                    b.HasOne("DocUploader.Shared.Models.Client", "Client")
+                        .WithMany("ClientDocumentCategories")
+                        .HasForeignKey("ClientId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("DocUploader.Shared.Models.DocumentCategory", "DocumentCategory")
+                        .WithMany("ClientDocumentCategories")
+                        .HasForeignKey("DocumentCategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Client");
+
+                    b.Navigation("DocumentCategory");
+                });
+
             modelBuilder.Entity("DocUploader.Shared.Models.ClientsRequest", b =>
                 {
                     b.HasOne("DocUploader.Shared.Models.Client", "Client")
@@ -568,6 +623,8 @@ namespace DocUploader.Server.Migrations
 
             modelBuilder.Entity("DocUploader.Shared.Models.Client", b =>
                 {
+                    b.Navigation("ClientDocumentCategories");
+
                     b.Navigation("ClientsRequests");
 
                     b.Navigation("UploadedDocuments");
@@ -578,6 +635,11 @@ namespace DocUploader.Server.Migrations
                     b.Navigation("RequestDocuments");
 
                     b.Navigation("UploadedDocuments");
+                });
+
+            modelBuilder.Entity("DocUploader.Shared.Models.DocumentCategory", b =>
+                {
+                    b.Navigation("ClientDocumentCategories");
                 });
 
             modelBuilder.Entity("DocUploader.Shared.Models.Request", b =>
