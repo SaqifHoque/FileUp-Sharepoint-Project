@@ -228,15 +228,15 @@
       "mscorlib.dll": "sha256-X+o60j6cZnlI2vFFjdH81yYTAxx13\/wqnNSWTKbDsyw=",
       "netstandard.dll": "sha256-Cr6slBs\/R2v2t\/vecFDHbQHakbEhar0adYu0YemwiXI=",
       "System.Private.CoreLib.dll": "sha256-dDw5nzGJhW1jOjGfSJcs\/Mi4KQ+DZygXnoK+vJ+jHyk=",
-      "DocUploader.Shared.dll": "sha256-KIPSoJ83i4r0Obxa3RS3rA\/EHcwwTCzgoWgy56RKu7I=",
-      "DocUploader.Client.dll": "sha256-G8K9vimVhCTYx2Et9\/BS5sCR9Ugc3toniv0rHWK9CA4="
+      "DocUploader.Shared.dll": "sha256-DlC31mj+buInYmzYe2J09nk0mf0sVJL7tW8ooT7OOns=",
+      "DocUploader.Client.dll": "sha256-hsAkDT\/XlUemkXZ0v23pHGm91S00sKqCzyR2bj8Ouq8="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "DocUploader.Shared.pdb": "sha256-xpcByadB1\/2xU+a1eE2u6g6kr\/H9uFs3Fmf4m8qYjgA=",
-      "DocUploader.Client.pdb": "sha256-y51TvDgHyU\/ZkS5YKQgrXW5BAwk7WLXQBYhRZ4Dw+K4="
+      "DocUploader.Shared.pdb": "sha256-mFi3O9xA5pfDc8+Eu+3pWpkfU6uT\/dz9\/4vkqEMPOcA=",
+      "DocUploader.Client.pdb": "sha256-sttoYvVTFm9ZhgOlhblviKOUiALcX5D3t6AUFfxUIyE="
     },
     "runtime": {
       "dotnet.7.0.11.sf8asx8yhf.js": "sha256-RtIVigdAD1mUvR4pxoKyD8kcQgw4INP81v+PVSqkeQY=",

@@ -1,0 +1,47 @@
+2023-10-27 12:26:13.282 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-27 12:26:13.366 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-27 12:26:13.370 +06:00 [INF] Hosting environment: Development
+2023-10-27 12:26:13.374 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-27 12:26:19.301 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-27 12:26:57.962 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-27 12:28:56.026 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-27 12:28:56.096 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-27 12:28:56.100 +06:00 [INF] Hosting environment: Development
+2023-10-27 12:28:56.102 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-27 12:28:59.309 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-27 12:29:32.966 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-27 12:35:37.967 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-27 12:35:38.034 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-27 12:35:38.036 +06:00 [INF] Hosting environment: Development
+2023-10-27 12:35:38.038 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-27 12:35:41.501 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-27 12:36:16.314 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-27 22:26:46.363 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-27 22:26:46.400 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-27 22:26:46.401 +06:00 [INF] Hosting environment: Development
+2023-10-27 22:26:46.402 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-27 22:27:01.547 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-27 22:27:01.581 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-27 22:27:01.582 +06:00 [INF] Hosting environment: Development
+2023-10-27 22:27:01.583 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-27 22:27:03.865 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-27 22:27:34.055 +06:00 [INF] Login Attempt for saqifhaque@yahoo.com 
+2023-10-27 22:37:55.625 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-27 22:37:55.668 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-27 22:37:55.670 +06:00 [INF] Hosting environment: Development
+2023-10-27 22:37:55.671 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-27 22:37:57.496 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-27 22:38:35.784 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-27 22:38:42.769 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-27 23:04:00.226 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-27 23:04:00.276 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-27 23:04:00.279 +06:00 [INF] Hosting environment: Development
+2023-10-27 23:04:00.280 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-27 23:04:02.731 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-27 23:04:33.997 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-27 23:06:45.275 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-27 23:06:45.333 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-27 23:06:45.335 +06:00 [INF] Hosting environment: Development
+2023-10-27 23:06:45.336 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-27 23:06:48.846 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-27 23:07:21.998 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 

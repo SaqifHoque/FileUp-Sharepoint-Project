@@ -1,0 +1,46 @@
+2023-10-28 20:49:59.126 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-28 20:49:59.188 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-28 20:49:59.193 +06:00 [INF] Hosting environment: Development
+2023-10-28 20:49:59.197 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-28 20:50:01.991 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-28 20:50:34.842 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-28 20:51:32.575 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-28 20:51:32.623 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-28 20:51:32.626 +06:00 [INF] Hosting environment: Development
+2023-10-28 20:51:32.627 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-28 20:51:35.116 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-28 20:52:03.967 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-28 20:55:50.400 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-28 20:55:50.442 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-28 20:55:50.445 +06:00 [INF] Hosting environment: Development
+2023-10-28 20:55:50.446 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-28 20:55:52.555 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-28 20:56:24.677 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-28 20:59:19.085 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-28 20:59:19.168 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-28 20:59:19.172 +06:00 [INF] Hosting environment: Development
+2023-10-28 20:59:19.175 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-28 20:59:22.495 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-28 21:00:19.763 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-28 21:02:50.795 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-28 21:02:50.905 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-28 21:02:50.911 +06:00 [INF] Hosting environment: Development
+2023-10-28 21:02:50.915 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-28 21:02:54.370 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-28 21:03:39.939 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-28 21:05:46.128 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-28 21:05:46.198 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-28 21:05:46.202 +06:00 [INF] Hosting environment: Development
+2023-10-28 21:05:46.205 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-28 21:05:49.554 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-28 21:06:23.503 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
+2023-10-28 23:20:20.855 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-28 23:20:20.902 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-28 23:20:20.905 +06:00 [INF] Hosting environment: Development
+2023-10-28 23:20:20.905 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-28 23:20:33.957 +06:00 [INF] Now listening on: http://localhost:5170
+2023-10-28 23:20:34.011 +06:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-10-28 23:20:34.013 +06:00 [INF] Hosting environment: Development
+2023-10-28 23:20:34.015 +06:00 [INF] Content root path: C:\Projects\Sharepoint\test\sharepoint-project\DocUploader\Server
+2023-10-28 23:20:36.290 +06:00 [WRN] Failed to determine the https port for redirect.
+2023-10-28 23:21:04.918 +06:00 [INF] Login Attempt for saqifhaque@gmail.com 
