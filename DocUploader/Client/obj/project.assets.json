@@ -5523,11 +5523,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\Sharepoint\\test\\sharepoint-project\\DocUploader\\Client\\DocUploader.Client.csproj",
+      "projectUniqueName": "C:\\Projects\\Sharepoint\\dev\\DocUploader\\Client\\DocUploader.Client.csproj",
       "projectName": "DocUploader.Client",
-      "projectPath": "C:\\Projects\\Sharepoint\\test\\sharepoint-project\\DocUploader\\Client\\DocUploader.Client.csproj",
+      "projectPath": "C:\\Projects\\Sharepoint\\dev\\DocUploader\\Client\\DocUploader.Client.csproj",
       "packagesPath": "C:\\Users\\Saqif\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\Sharepoint\\test\\sharepoint-project\\DocUploader\\Client\\obj\\",
+      "outputPath": "C:\\Projects\\Sharepoint\\dev\\DocUploader\\Client\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Saqif\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5544,8 +5544,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Projects\\Sharepoint\\test\\sharepoint-project\\DocUploader\\Shared\\DocUploader.Shared.csproj": {
-              "projectPath": "C:\\Projects\\Sharepoint\\test\\sharepoint-project\\DocUploader\\Shared\\DocUploader.Shared.csproj"
+            "C:\\Projects\\Sharepoint\\dev\\DocUploader\\Shared\\DocUploader.Shared.csproj": {
+              "projectPath": "C:\\Projects\\Sharepoint\\dev\\DocUploader\\Shared\\DocUploader.Shared.csproj"
             }
           }
         }

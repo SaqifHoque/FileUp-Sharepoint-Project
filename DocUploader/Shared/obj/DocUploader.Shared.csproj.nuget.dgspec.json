@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\Sharepoint\\test\\sharepoint-project\\DocUploader\\Shared\\DocUploader.Shared.csproj": {}
+    "C:\\Projects\\Sharepoint\\dev\\DocUploader\\Shared\\DocUploader.Shared.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\Sharepoint\\test\\sharepoint-project\\DocUploader\\Shared\\DocUploader.Shared.csproj": {
+    "C:\\Projects\\Sharepoint\\dev\\DocUploader\\Shared\\DocUploader.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\Sharepoint\\test\\sharepoint-project\\DocUploader\\Shared\\DocUploader.Shared.csproj",
+        "projectUniqueName": "C:\\Projects\\Sharepoint\\dev\\DocUploader\\Shared\\DocUploader.Shared.csproj",
         "projectName": "DocUploader.Shared",
-        "projectPath": "C:\\Projects\\Sharepoint\\test\\sharepoint-project\\DocUploader\\Shared\\DocUploader.Shared.csproj",
+        "projectPath": "C:\\Projects\\Sharepoint\\dev\\DocUploader\\Shared\\DocUploader.Shared.csproj",
         "packagesPath": "C:\\Users\\Saqif\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\Sharepoint\\test\\sharepoint-project\\DocUploader\\Shared\\obj\\",
+        "outputPath": "C:\\Projects\\Sharepoint\\dev\\DocUploader\\Shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Saqif\\AppData\\Roaming\\NuGet\\NuGet.Config",

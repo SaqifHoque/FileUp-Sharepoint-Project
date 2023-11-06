@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "HzzTpjNStNd4X7+SVMfeGrNvGsDRXhUU0zyAwJXVkNl0NkTkH94q8107YdbFjrSlA++Dn3DOhvcvU1SCOOwssQ==",
+  "dgSpecHash": "aL7MD3zylL0xWM1Zu8hftudLh3PsoIzEwFeqy07v8fChpnDX6oftZ1egn337TJs821XdqizvtN+kNVgS0wAFXA==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\Sharepoint\\test\\sharepoint-project\\DocUploader\\Server\\DocUploader.Server.csproj",
+  "projectFilePath": "C:\\Projects\\Sharepoint\\dev\\DocUploader\\Server\\DocUploader.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Saqif\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\Saqif\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",

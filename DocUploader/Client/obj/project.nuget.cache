@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9He21AQ5kcqrDDYobuypr19Xx5hTiNF6JgZ6Q16J7u3FXB0gTwYnx97XpJRLFqC0zo2M1tTcX26U7kIVgr+EXQ==",
+  "dgSpecHash": "8W3cqZEbIV9kW9NC5CT8/M1MSrlTyGkANWBEa8upAXTID9XSCjdaHTdmRHgoGuuLbZVGOwwg8zUZ6hmYRY7n/Q==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\Sharepoint\\test\\sharepoint-project\\DocUploader\\Client\\DocUploader.Client.csproj",
+  "projectFilePath": "C:\\Projects\\Sharepoint\\dev\\DocUploader\\Client\\DocUploader.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Saqif\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Saqif\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

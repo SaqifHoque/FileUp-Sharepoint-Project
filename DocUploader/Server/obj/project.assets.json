@@ -7262,11 +7262,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\Sharepoint\\test\\sharepoint-project\\DocUploader\\Server\\DocUploader.Server.csproj",
+      "projectUniqueName": "C:\\Projects\\Sharepoint\\dev\\DocUploader\\Server\\DocUploader.Server.csproj",
       "projectName": "DocUploader.Server",
-      "projectPath": "C:\\Projects\\Sharepoint\\test\\sharepoint-project\\DocUploader\\Server\\DocUploader.Server.csproj",
+      "projectPath": "C:\\Projects\\Sharepoint\\dev\\DocUploader\\Server\\DocUploader.Server.csproj",
       "packagesPath": "C:\\Users\\Saqif\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\Sharepoint\\test\\sharepoint-project\\DocUploader\\Server\\obj\\",
+      "outputPath": "C:\\Projects\\Sharepoint\\dev\\DocUploader\\Server\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Saqif\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7283,11 +7283,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Projects\\Sharepoint\\test\\sharepoint-project\\DocUploader\\Client\\DocUploader.Client.csproj": {
-              "projectPath": "C:\\Projects\\Sharepoint\\test\\sharepoint-project\\DocUploader\\Client\\DocUploader.Client.csproj"
+            "C:\\Projects\\Sharepoint\\dev\\DocUploader\\Client\\DocUploader.Client.csproj": {
+              "projectPath": "C:\\Projects\\Sharepoint\\dev\\DocUploader\\Client\\DocUploader.Client.csproj"
             },
-            "C:\\Projects\\Sharepoint\\test\\sharepoint-project\\DocUploader\\Shared\\DocUploader.Shared.csproj": {
-              "projectPath": "C:\\Projects\\Sharepoint\\test\\sharepoint-project\\DocUploader\\Shared\\DocUploader.Shared.csproj"
+            "C:\\Projects\\Sharepoint\\dev\\DocUploader\\Shared\\DocUploader.Shared.csproj": {
+              "projectPath": "C:\\Projects\\Sharepoint\\dev\\DocUploader\\Shared\\DocUploader.Shared.csproj"
             }
           }
         }
